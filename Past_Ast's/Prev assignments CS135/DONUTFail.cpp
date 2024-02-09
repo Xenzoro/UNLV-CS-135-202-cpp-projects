@@ -295,11 +295,11 @@ void update();
 void print();
 
 int main() {
-    // TODO: Write your code here!
+    //  Write your code here!
     return 0;
 }
 
-// TODO: Write the implementations of findPart, insert, search, and update here!
+//  Write the implementations of findPart, insert, search, and update here!
 
 void print() {
     std::printf("Part Number    Part Name                "
