@@ -9,6 +9,7 @@ using namespace std;
 
 int main(int args, char * argv[])
 {
+    cout << "this is a change in my main";
     if(args <3){
         cout << "error need more args\n";
         return 0;
