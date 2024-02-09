@@ -1,0 +1,380 @@
+Enter donut file: Donuts.csv
+Welcome to Hank's Donut World!
+
+List of donuts
+---------------------------
+Glazed and Confused 7.62
+The Mighty Jelly Donut 6.28
+Donut Worry Be Happy 8.94
+Jelly Jiggler 5.76
+Boston Scream Pie 9.12
+Cereal Thriller 5.41
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+Cookie Monster 5.98
+Nutella Nirvana 8.36
+Raspberry Rhapsody 6.51
+Choco-Lottery 9.77
+Espresso Yourself 7.09
+Caramel Comedian 8.17
+Frosted Frenemy 5.55
+French Toastie 9.45
+Key Lime Crime 6.89
+PBJ Delight 5.12
+Rocky Roadster 8.63
+Lemon Laffy Taffy 7.34
+Coconut Cream Dream 9.88
+Biscuit Bandit 5.87
+Pistachio Pizzazz 7.46
+Tiramisu Tornado 6.04
+Doughnut of Solitude 8.75
+Waffle Wannabe 5.34
+Pretzel Logic 9.20
+Blueberry Bliss Bomb 5.64
+Snickerdoodle Dandy 8.48
+
+Enter donut name or cheapest: Glazed and Confused
+You selected Glazed and Confused
+Excellent choice!
+Will this complete your order? No
+List of donuts
+---------------------------
+The Mighty Jelly Donut 6.28
+Donut Worry Be Happy 8.94
+Jelly Jiggler 5.76
+Boston Scream Pie 9.12
+Cereal Thriller 5.41
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+Cookie Monster 5.98
+Nutella Nirvana 8.36
+Raspberry Rhapsody 6.51
+Choco-Lottery 9.77
+Espresso Yourself 7.09
+Caramel Comedian 8.17
+Frosted Frenemy 5.55
+French Toastie 9.45
+Key Lime Crime 6.89
+PBJ Delight 5.12
+Rocky Roadster 8.63
+Lemon Laffy Taffy 7.34
+Coconut Cream Dream 9.88
+Biscuit Bandit 5.87
+Pistachio Pizzazz 7.46
+Tiramisu Tornado 6.04
+Doughnut of Solitude 8.75
+Waffle Wannabe 5.34
+Pretzel Logic 9.20
+Blueberry Bliss Bomb 5.64
+Snickerdoodle Dandy 8.48
+
+Enter donut name or cheapest: The Mighty Jelly Donut
+You selected The Mighty Jelly Donut
+Excellent choice!
+Will this complete your order? No
+List of donuts
+---------------------------
+Donut Worry Be Happy 8.94
+Jelly Jiggler 5.76
+Boston Scream Pie 9.12
+Cereal Thriller 5.41
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+Cookie Monster 5.98
+Nutella Nirvana 8.36
+Raspberry Rhapsody 6.51
+Choco-Lottery 9.77
+Espresso Yourself 7.09
+Caramel Comedian 8.17
+Frosted Frenemy 5.55
+French Toastie 9.45
+Key Lime Crime 6.89
+PBJ Delight 5.12
+Rocky Roadster 8.63
+Lemon Laffy Taffy 7.34
+Coconut Cream Dream 9.88
+Biscuit Bandit 5.87
+Pistachio Pizzazz 7.46
+Tiramisu Tornado 6.04
+Doughnut of Solitude 8.75
+Waffle Wannabe 5.34
+Pretzel Logic 9.20
+Blueberry Bliss Bomb 5.64
+Snickerdoodle Dandy 8.48
+
+Enter donut name or cheapest: Glazed and Confused
+Donut not found!
+List of donuts
+---------------------------
+Donut Worry Be Happy 8.94
+Jelly Jiggler 5.76
+Boston Scream Pie 9.12
+Cereal Thriller 5.41
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+Cookie Monster 5.98
+Nutella Nirvana 8.36
+Raspberry Rhapsody 6.51
+Choco-Lottery 9.77
+Espresso Yourself 7.09
+Caramel Comedian 8.17
+Frosted Frenemy 5.55
+French Toastie 9.45
+Key Lime Crime 6.89
+PBJ Delight 5.12
+Rocky Roadster 8.63
+Lemon Laffy Taffy 7.34
+Coconut Cream Dream 9.88
+Biscuit Bandit 5.87
+Pistachio Pizzazz 7.46
+Tiramisu Tornado 6.04
+Doughnut of Solitude 8.75
+Waffle Wannabe 5.34
+Pretzel Logic 9.20
+Blueberry Bliss Bomb 5.64
+Snickerdoodle Dandy 8.48
+
+Enter donut name or cheapest: PBJ Delight
+You selected PBJ Delight
+Excellent choice!
+Will this complete your order? Non
+Will this complete your order? No
+List of donuts
+---------------------------
+Donut Worry Be Happy 8.94
+Jelly Jiggler 5.76
+Boston Scream Pie 9.12
+Cereal Thriller 5.41
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+Cookie Monster 5.98
+Nutella Nirvana 8.36
+Raspberry Rhapsody 6.51
+Choco-Lottery 9.77
+Espresso Yourself 7.09
+Caramel Comedian 8.17
+Frosted Frenemy 5.55
+French Toastie 9.45
+Key Lime Crime 6.89
+Rocky Roadster 8.63
+Lemon Laffy Taffy 7.34
+Coconut Cream Dream 9.88
+Biscuit Bandit 5.87
+Pistachio Pizzazz 7.46
+Tiramisu Tornado 6.04
+Doughnut of Solitude 8.75
+Waffle Wannabe 5.34
+Pretzel Logic 9.20
+Blueberry Bliss Bomb 5.64
+Snickerdoodle Dandy 8.48
+
+Enter donut name or cheapest: Cheapest
+You selected Waffle Wannabe
+Excellent choice!
+Will this complete your order? Nope
+Will this complete your order? No way
+Will this complete your order? No
+List of donuts
+---------------------------
+Donut Worry Be Happy 8.94
+Jelly Jiggler 5.76
+Boston Scream Pie 9.12
+Cereal Thriller 5.41
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+Cookie Monster 5.98
+Nutella Nirvana 8.36
+Raspberry Rhapsody 6.51
+Choco-Lottery 9.77
+Espresso Yourself 7.09
+Caramel Comedian 8.17
+Frosted Frenemy 5.55
+French Toastie 9.45
+Key Lime Crime 6.89
+Rocky Roadster 8.63
+Lemon Laffy Taffy 7.34
+Coconut Cream Dream 9.88
+Biscuit Bandit 5.87
+Pistachio Pizzazz 7.46
+Tiramisu Tornado 6.04
+Doughnut of Solitude 8.75
+Pretzel Logic 9.20
+Blueberry Bliss Bomb 5.64
+Snickerdoodle Dandy 8.48
+
+Enter donut name or cheapest: Cheapest
+You selected Cereal Thriller
+Excellent choice!
+Will this complete your order? No
+List of donuts
+---------------------------
+Donut Worry Be Happy 8.94
+Jelly Jiggler 5.76
+Boston Scream Pie 9.12
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+Cookie Monster 5.98
+Nutella Nirvana 8.36
+Raspberry Rhapsody 6.51
+Choco-Lottery 9.77
+Espresso Yourself 7.09
+Caramel Comedian 8.17
+Frosted Frenemy 5.55
+French Toastie 9.45
+Key Lime Crime 6.89
+Rocky Roadster 8.63
+Lemon Laffy Taffy 7.34
+Coconut Cream Dream 9.88
+Biscuit Bandit 5.87
+Pistachio Pizzazz 7.46
+Tiramisu Tornado 6.04
+Doughnut of Solitude 8.75
+Pretzel Logic 9.20
+Blueberry Bliss Bomb 5.64
+Snickerdoodle Dandy 8.48
+
+Enter donut name or cheapest: Snickerdoodle Dandy
+You selected Snickerdoodle Dandy
+Excellent choice!
+Will this complete your order? No
+List of donuts
+---------------------------
+Donut Worry Be Happy 8.94
+Jelly Jiggler 5.76
+Boston Scream Pie 9.12
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+Cookie Monster 5.98
+Nutella Nirvana 8.36
+Raspberry Rhapsody 6.51
+Choco-Lottery 9.77
+Espresso Yourself 7.09
+Caramel Comedian 8.17
+Frosted Frenemy 5.55
+French Toastie 9.45
+Key Lime Crime 6.89
+Rocky Roadster 8.63
+Lemon Laffy Taffy 7.34
+Coconut Cream Dream 9.88
+Biscuit Bandit 5.87
+Pistachio Pizzazz 7.46
+Tiramisu Tornado 6.04
+Doughnut of Solitude 8.75
+Pretzel Logic 9.20
+Blueberry Bliss Bomb 5.64
+
+Enter donut name or cheapest: BlueBerry Bliss BOMB
+You selected Blueberry Bliss Bomb
+Excellent choice!
+Will this complete your order? No
+List of donuts
+---------------------------
+Donut Worry Be Happy 8.94
+Jelly Jiggler 5.76
+Boston Scream Pie 9.12
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+Cookie Monster 5.98
+Nutella Nirvana 8.36
+Raspberry Rhapsody 6.51
+Choco-Lottery 9.77
+Espresso Yourself 7.09
+Caramel Comedian 8.17
+Frosted Frenemy 5.55
+French Toastie 9.45
+Key Lime Crime 6.89
+Rocky Roadster 8.63
+Lemon Laffy Taffy 7.34
+Coconut Cream Dream 9.88
+Biscuit Bandit 5.87
+Pistachio Pizzazz 7.46
+Tiramisu Tornado 6.04
+Doughnut of Solitude 8.75
+Pretzel Logic 9.20
+
+Enter donut name or cheapest: Snickerdoodle dandy
+Donut not found!
+List of donuts
+---------------------------
+Donut Worry Be Happy 8.94
+Jelly Jiggler 5.76
+Boston Scream Pie 9.12
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+Cookie Monster 5.98
+Nutella Nirvana 8.36
+Raspberry Rhapsody 6.51
+Choco-Lottery 9.77
+Espresso Yourself 7.09
+Caramel Comedian 8.17
+Frosted Frenemy 5.55
+French Toastie 9.45
+Key Lime Crime 6.89
+Rocky Roadster 8.63
+Lemon Laffy Taffy 7.34
+Coconut Cream Dream 9.88
+Biscuit Bandit 5.87
+Pistachio Pizzazz 7.46
+Tiramisu Tornado 6.04
+Doughnut of Solitude 8.75
+Pretzel Logic 9.20
+
+Enter donut name or cheapest: Blueberry Bliss Bomb
+Donut not found!
+List of donuts
+---------------------------
+Donut Worry Be Happy 8.94
+Jelly Jiggler 5.76
+Boston Scream Pie 9.12
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+Cookie Monster 5.98
+Nutella Nirvana 8.36
+Raspberry Rhapsody 6.51
+Choco-Lottery 9.77
+Espresso Yourself 7.09
+Caramel Comedian 8.17
+Frosted Frenemy 5.55
+French Toastie 9.45
+Key Lime Crime 6.89
+Rocky Roadster 8.63
+Lemon Laffy Taffy 7.34
+Coconut Cream Dream 9.88
+Biscuit Bandit 5.87
+Pistachio Pizzazz 7.46
+Tiramisu Tornado 6.04
+Doughnut of Solitude 8.75
+Pretzel Logic 9.20
+
+Enter donut name or cheapest: Pretzel Logic
+You selected Pretzel Logic
+Excellent choice!
+Will this complete your order? No
+List of donuts
+---------------------------
+Donut Worry Be Happy 8.94
+Jelly Jiggler 5.76
+Boston Scream Pie 9.12
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+Cookie Monster 5.98
+Nutella Nirvana 8.36
+Raspberry Rhapsody 6.51
+Choco-Lottery 9.77
+Espresso Yourself 7.09
+Caramel Comedian 8.17
+Frosted Frenemy 5.55
+French Toastie 9.45
+Key Lime Crime 6.89
+Rocky Roadster 8.63
+Lemon Laffy Taffy 7.34
+Coconut Cream Dream 9.88
+Biscuit Bandit 5.87
+Pistachio Pizzazz 7.46
+Tiramisu Tornado 6.04
+Doughnut of Solitude 8.75
+
+Enter donut name or cheapest: Cheapest
+You selected Frosted Frenemy
+Excellent choice!
+Will this complete your order? yes

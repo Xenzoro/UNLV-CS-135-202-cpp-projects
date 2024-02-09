@@ -1,0 +1,95 @@
+Enter donut file: DonutsSmall.csv
+Welcome to Hank's Donut World!
+
+List of donuts
+---------------------------
+The Mighty Jelly Donut 6.28
+Jelly Jiggler 5.76
+Boston Scream Pie 9.12
+Cereal Thriller 5.41
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+Cookie Monster 5.98
+Nutella Nirvana 8.36
+
+Enter donut name or cheapest: Cereal Thriller
+You selected Cereal Thriller
+Excellent choice!
+Will this complete your order? No
+List of donuts
+---------------------------
+The Mighty Jelly Donut 6.28
+Jelly Jiggler 5.76
+Boston Scream Pie 9.12
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+Cookie Monster 5.98
+Nutella Nirvana 8.36
+
+Enter donut name or cheapest: CheapEST
+You selected Jelly Jiggler
+Excellent choice!
+Will this complete your order? NO
+List of donuts
+---------------------------
+The Mighty Jelly Donut 6.28
+Boston Scream Pie 9.12
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+Cookie Monster 5.98
+Nutella Nirvana 8.36
+
+Enter donut name or cheapest: Nutella Nirvana
+You selected Nutella Nirvana
+Excellent choice!
+Will this complete your order? No
+List of donuts
+---------------------------
+The Mighty Jelly Donut 6.28
+Boston Scream Pie 9.12
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+Cookie Monster 5.98
+
+Enter donut name or cheapest: The Mighty Jelly Donut
+You selected The Mighty Jelly Donut
+Excellent choice!
+Will this complete your order? No
+List of donuts
+---------------------------
+Boston Scream Pie 9.12
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+Cookie Monster 5.98
+
+Enter donut name or cheapest: Cheapest
+You selected Cookie Monster
+Excellent choice!
+Will this complete your order? No
+List of donuts
+---------------------------
+Boston Scream Pie 9.12
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+
+Enter donut name or cheapest: Boston Scream Pie
+You selected Boston Scream Pie
+Excellent choice!
+Will this complete your order? No
+List of donuts
+---------------------------
+Maple Bacon Barbecue 7.85
+S'mores Galore 6.73
+
+Enter donut name or cheapest: Maple Bacon Barbecue
+You selected Maple Bacon Barbecue
+Excellent choice!
+Will this complete your order? No
+List of donuts
+---------------------------
+S'mores Galore 6.73
+
+Enter donut name or cheapest: Cheapest
+You selected S'mores Galore
+Excellent choice!
+Will this complete your order? No
