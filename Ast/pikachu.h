@@ -1,3 +1,9 @@
+/*
+    * Name: Jacob Martinez, NSHE_ID_500755340, 1003 ASSIGNMENT_3
+    * Description:  test
+    * Input:  test
+    * Output:  test
+*/
 #include "pokemon.h"
 #include "rnd.h"
 #include "attackMove.h"

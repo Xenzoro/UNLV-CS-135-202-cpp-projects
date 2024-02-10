@@ -1,4 +1,26 @@
+/*
+    * Name: Jacob Martinez, NSHE_ID_500755340, 1003 ASSIGNMENT_3
+    * Description: Pok ́emon Yellow Version: Special Pikachu Edition is
+    * a role-playing video game developed by Game Freak and published
+    * by Nintendo for the Game Boy. In any Pok ́emon game, there are
+    * situations where you need to battle other trainers
+    * (where you battle their Pok ́emon) or random wild Pok ́emon.
+    * They consist of turn based battles where you and your opponent
+    * take turns, each pok ́emon have up to 4 moves and each move
+    * can be used a finite amount of times. In all of the Pok ́emon
+    * games, the matches are strategic and you try to play against
+    * your opponent’s weaknesses, but we will have a simple battle
+    * between two Pikachu characters. You will implement a 2 player
+    * turn based battle game between two Pikachus with slightly
+    * different move sets and different defense values. The next few
+    * sections describes the classes you will use and in some cases,
+    * you will need to implement
+    * test2
+    * Input: numbers from input txt files
+    * Output: a hud of the players hit
+*/
 #include "pokemon.h"
+#include "attackMove.h"
 #include <iostream>
 #include <iomanip>
 #include <iomanip>
@@ -61,7 +83,6 @@ attackMove pokemon::getMove(int moveIndex) const
 }
 //displays the HUD
 void pokemon::displayHUD() const{
-// 13 spc
 // setw() is the "width" of the phrase,string etc after it...
 // ie. setw(5) << "i"... 5 bc it includes the "I" as well...
     cout << left
@@ -71,6 +92,7 @@ void pokemon::displayHUD() const{
          << setw(5)  << "Pwr" // includes "Pwr"
          << "Acc" << endl
          << "-----------------------------------" << endl;
+
         for(int i = 0; i < MAX_MOVES; i++){
     cout << left
          << setw(5)  << i + 1

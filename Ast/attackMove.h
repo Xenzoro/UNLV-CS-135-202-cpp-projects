@@ -1,3 +1,9 @@
+/*
+    * Name: Jacob Martinez, NSHE_ID_500755340, 1003 ASSIGNMENT_3
+    * Description:  test
+    * Input:  test
+    * Output:  test
+*/
 #ifndef ATTACK_MOVE_H
 #define ATTACK_MOVE_H
 #include <string>

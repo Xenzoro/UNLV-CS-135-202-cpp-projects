@@ -1,0 +1,6 @@
+Player 1
+
+Enter move index: 1
+Attack Hit
+
+Player 2
