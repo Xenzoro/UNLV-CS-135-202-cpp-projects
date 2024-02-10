@@ -18,15 +18,16 @@ void pikachu::decrementHp(int hpAmount)
 
 char pikachu::attackPikachu(pikachu& opponent, int moveIndex)
 {
+
     //checks if the move is usable with  player X
-    if(!pokemon::moveUseable(moveIndex)){
-        cout << "this move is unusable\n"
-             << getMove(moveIndex).name << endl;
+    if(!moveUseable(moveIndex)){
+        // checks if the move is not usable
             return 'U';
     }
     //condition if the move is usable
-    else if (pokemon::getMove(moveIndex).amount > 0)
+    else if (getMove(moveIndex).amount > 0)
     {
+            // condition if the move is usable
             //decrements the amount of moves from player X
             pokemon::moveUsed(moveIndex);
 
@@ -39,7 +40,10 @@ char pikachu::attackPikachu(pikachu& opponent, int moveIndex)
             opponent.decrementHp(pokemon::getMove(moveIndex).
                                    power - opponent.getDefense()/100);
             return 'H';
-       }
+       }else{
+            //the move missed the opponent
+            return 'M';
+        }
     }
             return 'U';
 }

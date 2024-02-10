@@ -41,6 +41,7 @@ bool pokemon::moveUseable(int moveIndex)
     if(moves[moveIndex].amount > 0){
         return true;
     }
+
     return false;
 }
 //getter for hp
@@ -71,10 +72,12 @@ void pokemon::displayHUD() const{
          << "Acc" << endl
          << "-----------------------------------" << endl;
         for(int i = 0; i < MAX_MOVES; i++){
-    cout << setw(5)  << i + 1
+    cout << left
+         << setw(5)  << i + 1
          << setw(17) << this->getMove(i).name
-         << setw(5)  << this->getMove(i).amount
+         << right
+         << setw(3)  << this->getMove(i).amount
          << setw(5)  << this->getMove(i).power
-         << this->getMove(i).acc << endl;
+         << setw (5) << this->getMove(i).acc << endl;
     }
 }

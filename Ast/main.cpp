@@ -32,6 +32,7 @@ int main(int args, char * argv[])
         infile1 >> tmp.name >> tmp.amount >> tmp.power >> tmp.acc;
          p1.addMove(tmp);
     }
+        infile1.close();
         //opens pikachu02.txt
         infile2.open(argv[2]);
         //same as above but for pikachu 2
@@ -44,31 +45,35 @@ int main(int args, char * argv[])
         infile2 >> tmp.name >> tmp.amount >> tmp.power >> tmp.acc;
         p2.addMove(tmp);
     }
+        infile2.close();
 
         int index = 0;
         int playerX = 1;
-        char hitChar;
+        char hitChar = 'M';
     do{
         // condition if player 1 is playing
         switch (playerX){
         case 1:
-            playerX = 2;
+
             cout << "Player 1" << endl;
             p1.displayHUD();
-            cout << "Enter move index: ";
+            cout << "\nEnter move index: ";
             cin >> index;
             index--;
             hitChar = p1.attackPikachu(p2, index);
+            playerX = 2;
             break;
+
         case 2:
-            playerX = 1;
             cout << "Player 2" << endl;
             p2.displayHUD();
-            cout << "Enter move index: ";
+            cout << "\nEnter move index: ";
             cin >> index;
             index--;
             hitChar = p2.attackPikachu(p1, index);
+            playerX = 1;
             break;
+
         default:
             cout << "Error\n";
             break;
@@ -82,7 +87,7 @@ int main(int args, char * argv[])
             }
             else if(hitChar == 'M')
             {
-                cout << "Attack Missed\n";
+                cout << "Attack Missed\n\n";
             // not sure if this is correct
             //alternate x from 1 to 2 or 2 to 1..
             // what does this mean?
@@ -90,7 +95,7 @@ int main(int args, char * argv[])
             }
             else if(hitChar == 'H')
             {
-                cout << "Attack Hit\n\n";
+                cout << "\nAttack Hit\n\n";
             //alternate 1 to 2 or vice versa again... how?
                 continue;
             }
