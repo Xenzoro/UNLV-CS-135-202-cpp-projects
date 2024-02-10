@@ -22,7 +22,11 @@ bool pokemon::addMove(attackMove m)
 
 void pokemon::decrementHp(int amount)
 {
+    cout << "This is the value of hp before : " << hp << endl
+         << "This is the value of amount: " << amount << endl;
+
     hp = getHp() - amount;
+    cout << "This is the new value of hp after getHP - amount: " << hp << endl;
     if(hp < 0){
         hp = 0;
     }
