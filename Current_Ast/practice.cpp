@@ -39,37 +39,74 @@ int main()
 	//for references 
 
 	//Start by allocating a single Person using the p pointer. Set their name to "John Doe" and age to 25
-	Person* p;
+    Person* p = new Person("John Doe", 25);
 
 	//TODO: YOUR CODE HERE
 
 	//Make p say their name
+    //difference between p.sayName() and p->sayName()... sine its a pointer
+    // were supposed to use p->sayName;
+    p->sayName();
 
 	//TODO: YOUR CODE HERE
 
 	//Allocate an array of 5 Persons using the arr pointer
-	Person* arr;
 
-	//TODO: YOUR CODE HERE
+
+    Person* arr[5];
+    for(int i =0; i < 5; i++){
+        arr[i] = new Person();
+    }
+    //TODO: YOUR CODE HERE
 
 	//Allocate an array of 3 Person references. Allocate each of the 3 people using the following info:
 	//Person 0: Jane Doe, 30
 	//Person 1: Jake Doe, 32
 	//Person 2: Julie Doe, 24
 
-	Person** personArr;
+        //the brackets defrences the array... in other words
+        // it allows the user/program to select the address
+        // of the specific location of the array
+        // with that location we can update the values
+        // as seen below!
+
 
 	//TODO: YOUR CODE HERE
+    Person** personArr;
+    personArr = new Person* [3];
 
-	for (int i = 0; i < 3; i++)
+
+    personArr[0] = new Person("Jane Doe",30);
+    personArr[1] = new Person("Jake Doe", 32);
+    personArr[2] = new Person("Julie Doe", 24);
+
+	for (int i = 0; i < 3; i++){
 		personArr[i]->sayName();
-
+        }
 	//This code prints the number of Persons allocated. You should get 9
 	cout << "Allocated " << Person::getCount() << " Persons" << endl;
 
 	//Finally, deallocate everything. Deallocate Person p, the arr, the 3 Persons in the personArr and the array itself
+    //TODO: YOUR CODE HERE
 
-	//TODO: YOUR CODE HERE
+     /*   for(int i = 0; i < 5; i++){
+            delete arr[i];
+            if(i < 3){
+                delete personArr[i];
+                }
+            }*/
+     // or do the method mentioned in the example...
+        p = nullptr;
+        personArr = nullptr;
+
+        delete p;
+        delete[] personArr;
+        for(int i =0; i < 5 ;i++){
+            arr[i] = nullptr;
+        delete arr[i];
+        }
+
+
 	#endif
 }
 
