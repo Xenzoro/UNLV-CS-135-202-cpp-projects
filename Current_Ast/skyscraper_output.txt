@@ -1,0 +1,376 @@
+How many floors?
+Enter the dimensions for floor 0
+Enter width: 
+Enter height: 
+Enter the dimensions for floor 1
+Enter width: 
+Enter height: 
+Enter the dimensions for floor 2
+Enter width: 
+Enter height: 
+Enter the dimensions for floor 3
+Enter width: 
+Enter height: 
+Enter the dimensions for floor 4
+Enter width: 
+Enter height: 
+Enter the dimensions for floor 5
+Enter width: 
+Enter height: 
+Enter the dimensions for floor 6
+Enter width: 
+Enter height: 
+Enter the dimensions for floor 7
+Enter width: 
+Enter height: 
+Enter the name for resident 1
+Would you like to add another resident (Y/N)?
+Enter the name for resident 2
+Would you like to add another resident (Y/N)?
+-------------------- Furniture Catalog --------------------
+1. chair
+2. lamp
+3. rug
+4. table
+
+
+What furniture would you like to add?
+What floor would you like to place the lamp on?
+What x position? 
+What y position? 
+Facing what direction? 
+Would you like to add more furniture (Y/N)?
+What furniture should be added next?
+What floor would you like to place the lamp on?
+What x position? 
+What y position? 
+Facing what direction? 
+Would you like to add more furniture (Y/N)?
+What furniture should be added next?
+What floor would you like to place the lamp on?
+What x position? 
+What y position? 
+Facing what direction? 
+Would you like to add more furniture (Y/N)?
+What furniture should be added next?
+What floor would you like to place the lamp on?
+What x position? 
+What y position? 
+Facing what direction? 
+Would you like to add more furniture (Y/N)?
+What furniture should be added next?
+What floor would you like to place the lamp on?
+What x position? 
+What y position? 
+Facing what direction? 
+Would you like to add more furniture (Y/N)?
+What furniture should be added next?
+What floor would you like to place the rug on?
+What x position? 
+What y position? 
+Facing what direction? 
+Would you like to add more furniture (Y/N)?
+What furniture should be added next?
+What floor would you like to place the lamp on?
+What x position? 
+What y position? 
+Facing what direction? 
+Would you like to add more furniture (Y/N)?
+What furniture should be added next?
+What floor would you like to place the chair on?
+What x position? 
+What y position? 
+Facing what direction? 
+Would you like to add more furniture (Y/N)?
+##############################
+Resident 0: Boss
+Resident 1: Doorman
+##############################
+
+Floor 7
+------------------------------------
+|                                  |
+|       #````#                     |
+|      *``````*                    |
+|      ````````                    |
+|      ````````                    |
+|      `******`                    |
+|      $      $                    |
+|      $      $                    |
+|      $******$                    |
+|      *``````*                    |
+|     *````````*                   |
+|     **********                   |
+|     ##########                   |
+|     # $    $ #                   |
+|     # $    $ #                   |
+|     # $    $ #                   |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+------------------------------------
+
+Floor 6
+------------------------------------
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                          $       |
+|                        *#$#*     |
+|                       *****``    |
+|                       **`*```    |
+|                     **`*```````  |
+|                    **`*````````  |
+|                    ***````````*  |
+|                      **`````*#   |
+|                        ##***     |
+|                          $       |
+|                          $       |
+|                          $       |
+|                          $       |
+|                         *$*      |
+|                        #####     |
+------------------------------------
+
+Floor 5
+------------------------------------
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                    ````````````  |
+|                   ``**********`` |
+|                   `**$$$$$$$$**` |
+|                   `*$````````$*` |
+|                   `*$````````$*` |
+|                   `**$$$$$$$$**` |
+|                   ``**********`` |
+|                    ````````````  |
+|                                  |
+------------------------------------
+
+Floor 4
+------------------------------------
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                          $       |
+|                        *#$#*     |
+|                       *****``    |
+|                       **`*```    |
+|                     **`*```````  |
+|                    **`*````````  |
+|                    ***````````*  |
+|                      **`````*#   |
+|                        ##***     |
+|                          $       |
+|                          $       |
+|                          $       |
+|                          $       |
+|                         *$*      |
+|                        #####     |
+------------------------------------
+
+Floor 3
+------------------------------------
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                          $       |
+|                        *#$#*     |
+|                       *****``    |
+|                       **`*```    |
+|                     **`*```````  |
+|                    **`*````````  |
+|                    ***````````*  |
+|                      **`````*#   |
+|                        ##***     |
+|                          $       |
+|                          $       |
+|                          $       |
+|                          $       |
+|                         *$*      |
+|                        #####     |
+------------------------------------
+
+Floor 2
+------------------------------------
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                          $       |
+|                        *#$#*     |
+|                       *****``    |
+|                       **`*```    |
+|                     **`*```````  |
+|                    **`*````````  |
+|                    ***````````*  |
+|                      **`````*#   |
+|                        ##***     |
+|                          $       |
+|                          $       |
+|                          $       |
+|                          $       |
+|                         *$*      |
+|                        #####     |
+------------------------------------
+
+Floor 1
+------------------------------------
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                          $       |
+|                        *#$#*     |
+|                       *****``    |
+|                       **`*```    |
+|                     **`*```````  |
+|                    **`*````````  |
+|                    ***````````*  |
+|                      **`````*#   |
+|                        ##***     |
+|                          $       |
+|                          $       |
+|                          $       |
+|                          $       |
+|                         *$*      |
+|                        #####     |
+------------------------------------
+
+Floor 0
+------------------------------------
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                                  |
+|                          $       |
+|                        *#$#*     |
+|                       *****``    |
+|                       **`*```    |
+|                     **`*```````  |
+|                    **`*````````  |
+|                    ***````````*  |
+|                      **`````*#   |
+|                        ##***     |
+|                          $       |
+|                          $       |
+|                          $       |
+|                          $       |
+|                         *$*      |
+|                        #####     |
+------------------------------------
