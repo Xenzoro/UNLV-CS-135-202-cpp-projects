@@ -14,6 +14,10 @@ ResidentList::ResidentList(int size)
 	//Remember to initialize the size and count for the list, as well
 
 	//TODO: Finish the function
+    // I think this is correct!
+    residents[size]; //updates the class with the new size
+    arraySize = size; // not using += because we are not adding, but replacing the value
+    residentCount += 1; //added because each time we call the function we will add a "resident"
 }
 
 /*  */
@@ -22,6 +26,8 @@ ResidentList::~ResidentList()
 	//Deallocate the residents array if it has been allocated
 
 	//TODO: Finish the function
+    //think this is correct
+    delete[] residents;
 }
 
 /*  */
@@ -34,6 +40,27 @@ void ResidentList::addResidentToList(string resident_name)
 	reprenting the list. */
 
 	//TODO: Finish the function
+
+    if(residentCount == arraySize){
+        //new string* that stores the old values into the new array
+        string* tempStr;
+        arraySize = arraySize +1;
+        tempStr = new string[arraySize];
+        //copies data from parent arr into child arr
+        for(int i =0; i< arraySize-1; i++){
+
+            tempStr[i] = residents[i];
+        }
+        tempStr[arraySize-1] = resident_name;
+        residentCount++;
+        //deletes old values
+        delete[] residents;
+        //residents now points to the value of tempStr arr
+        residents = tempStr;
+    }else {
+        residents[residentCount] = resident_name;
+        residentCount++;
+    }
 }
 
 /*  */
@@ -49,6 +76,9 @@ void ResidentList::printResidents()
 
 	//TODO: Print all resident names in the form Resident n: <name>
 
+    for(int i =0; i< residentCount; i++){
+    std::cout << "Resident " << i + 1 << ": " << residents[i] <<endl;
+    }
 	//Print bottom part
 	cout << setw(30) << setfill('#') << "" << setfill(' ') << endl;
 }
@@ -61,14 +91,30 @@ House::House(int num_floors)
 	//Make sure to initialize all members, although you don't need to make any actual Floors
 
 	//TODO: Finish the function
+
+    floorCount = num_floors;
+
+    Floor** amountFloors;
+    amountFloors = new Floor*[num_floors];
+    floors = amountFloors;
+
 }
 
 /*  */
 House::~House()
 {
-	//Deallocate all Floors in the house, then deallocate the array that held them
+    //Deallocate all Floors in the house, then deallocate the array that held them
 
-	//TODO: Finish the function
+    // TODO: Finish the function
+
+
+    //ask if this is okay!
+
+   // delete[] floors;
+    //or
+    for(int i = 0; i < floorCount; i++){
+        delete floors[i];
+    }
 }
 
 /*  Builds the floor on the given level of the house with the given width and height */

@@ -1,4 +1,5 @@
 //This file contains implementations for the Furniture and FurnitureCatalog classes.
+//This file contains implementations for the Furniture and FurnitureCatalog classes.
 //YOU DO NOT NEED TO ADD ANY CODE HERE
 //However, please feel free to look through the code to gain a better understanding of efficient memory usage
 //Note that some functions are written in the furniture.h file

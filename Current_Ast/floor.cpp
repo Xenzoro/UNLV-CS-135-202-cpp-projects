@@ -11,6 +11,11 @@ Floor::Floor(int width, int height)
 	//Start by allocating an array of size height and then populate that array with pointers to arrays of size width
 
 	//TODO: Finish the function
+    // or is this done automatically because it's called width/height in the function parameters and declaration
+    width = width;
+    height = height;
+
+
 }
 
 /*  */

@@ -52,11 +52,17 @@ int main()
 
 	//Allocate an array of 5 Persons using the arr pointer
 
-
+/*
     Person* arr[5];
     for(int i =0; i < 5; i++){
         arr[i] = new Person();
-    }
+                std::cout << "this is index: " << i << endl;
+    }*/
+
+//new example
+    Person* arr;
+    arr = new Person[5];
+
     //TODO: YOUR CODE HERE
 
 	//Allocate an array of 3 Person references. Allocate each of the 3 people using the following info:
@@ -96,16 +102,19 @@ int main()
                 }
             }*/
      // or do the method mentioned in the example...
+
+       delete p;
+
+
+       delete[] arr;
+
         p = nullptr;
-        personArr = nullptr;
 
-        delete p;
-        delete[] personArr;
-        for(int i =0; i < 5 ;i++){
-            arr[i] = nullptr;
-        delete arr[i];
-        }
 
+       for(int i =0; i < 3; i++){
+           delete personArr[i];
+       }
+           delete[] personArr;
 
 	#endif
 }
