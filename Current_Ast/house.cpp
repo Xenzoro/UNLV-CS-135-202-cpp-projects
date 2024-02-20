@@ -1,3 +1,24 @@
+/*
+    * Name: Jacob Martinez, NSHE_ID_500755340, 1003 ASSIGNMENT_4
+    * Description: Pok ́emon Yellow Version: Special Pikachu Edition is
+    * a role-playing video game developed by Game Freak and published
+    * by Nintendo for the Game Boy. In any Pok ́emon game, there are
+    * situations where you need to battle other trainers
+    * (where you battle their Pok ́emon) or random wild Pok ́emon.
+    * They consist of turn based battles where you and your opponent
+    * take turns, each pok ́emon have up to 4 moves and each move
+    * can be used a finite amount of times. In all of the Pok ́emon
+    * games, the matches are strategic and you try to play against
+    * your opponent’s weaknesses, but we will have a simple battle
+    * between two Pikachu characters. You will implement a 2 player
+    * turn based battle game between two Pikachus with slightly
+    * different move sets and different defense values. The next few
+    * sections describes the classes you will use and in some cases,
+    * you will need to implement
+    * test2
+    * Input: numbers from input txt files
+    * Output: a hud of the players hit
+*/
 #include "house.h"
 #include "furniture.h"
 #include <iomanip>
@@ -14,10 +35,13 @@ ResidentList::ResidentList(int size)
 	//Remember to initialize the size and count for the list, as well
 
 	//TODO: Finish the function
-    // I think this is correct!
-    residents[size]; //updates the class with the new size
+
+//        string* temp;
+//        temp = new string[size];
+    residents = new string[size]; //updates the class with the new size
     arraySize = size; // not using += because we are not adding, but replacing the value
-    residentCount += 1; //added because each time we call the function we will add a "resident"
+    residentCount = 0;
+
 }
 
 /*  */
@@ -44,14 +68,14 @@ void ResidentList::addResidentToList(string resident_name)
     if(residentCount == arraySize){
         //new string* that stores the old values into the new array
         string* tempStr;
-        arraySize = arraySize +1;
+        arraySize = arraySize + SIZE_INCREASE; // size increase == 3;
         tempStr = new string[arraySize];
         //copies data from parent arr into child arr
-        for(int i =0; i< arraySize-1; i++){
+        for(int i = 0; i< arraySize-SIZE_INCREASE; i++){
 
             tempStr[i] = residents[i];
         }
-        tempStr[arraySize-1] = resident_name;
+        tempStr[arraySize-SIZE_INCREASE] = resident_name;
         residentCount++;
         //deletes old values
         delete[] residents;
@@ -77,7 +101,7 @@ void ResidentList::printResidents()
 	//TODO: Print all resident names in the form Resident n: <name>
 
     for(int i =0; i< residentCount; i++){
-    std::cout << "Resident " << i + 1 << ": " << residents[i] <<endl;
+    std::cout << "Resident " << i << ": " << residents[i] <<endl;
     }
 	//Print bottom part
 	cout << setw(30) << setfill('#') << "" << setfill(' ') << endl;
@@ -94,9 +118,7 @@ House::House(int num_floors)
 
     floorCount = num_floors;
 
-    Floor** amountFloors;
-    amountFloors = new Floor*[num_floors];
-    floors = amountFloors;
+    floors = new Floor*[num_floors];
 
 }
 
@@ -110,11 +132,12 @@ House::~House()
 
     //ask if this is okay!
 
-   // delete[] floors;
+
     //or
     for(int i = 0; i < floorCount; i++){
         delete floors[i];
     }
+        delete [] floors;
 }
 
 /*  Builds the floor on the given level of the house with the given width and height */
