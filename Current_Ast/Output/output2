@@ -1,0 +1,1279 @@
+Waking up Professor Jimi with file 'dataset'
+Professor Jimi's response: Whyyyyyyyy?
+
+................................................................................
+>> comparing pokedex
+Pokedex equals to Pokedex ? 1
+
+................................................................................
+>> adding pokedex to the Pokebag
+
+>> using medicine on Pikachu
+>> displaying medicine information
+************************************************************
+(=0=) Medicine: QTY (100) / Patient
+=======================================================
+Pokemon:
+- id: 25
+- name: Pikachu
+- HP: 35
+- defense: 40
+- primary: Electric
+- secondary: None
+- weakness: Ground
+- resistance: Electric
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tail whip                   10        10        75
+>> thunder shock               40        40       100
+>> iron tail                  100       100        75
+************************************************************
+>> using medicine on Meowth
+>> displaying medicine information
+************************************************************
+(=0=) Medicine: QTY (100) / Patient
+=======================================================
+Pokemon:
+- id: 52
+- name: Meowth
+- HP: 40
+- defense: 35
+- primary: Normal
+- secondary: None
+- weakness: Fighting
+- resistance: Normal
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> bite                        60        60       100
+>> fury swipes                 18        18        80
+>> slash                       70        70       100
+************************************************************
+>> using medicine on Ekans
+>> displaying medicine information
+************************************************************
+(=0=) Medicine: QTY (100) / Patient
+=======================================================
+Pokemon:
+- id: 23
+- name: Ekans
+- HP: 35
+- defense: 60
+- primary: Poison
+- secondary: None
+- weakness: Psychic
+- resistance: Poison
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> wrap                        15        15        90
+>> poison sting                15        15       100
+>> acid                        40        40       100
+************************************************************
+................................................................................
+>> iterating through an array of Items
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[ITEM #1]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        ____        __            __
+       / __ \____  / /_____  ____/ /__  _  __
+      / /_/ / __ \/ //_/ _ \/ __  / _ \| |/_/
+     / ____/ /_/ / ,< /  __/ /_/ /  __/>  <
+    /_/    \____/_/|_|\___/\__,_/\___/_/|_|
+
+(*) Entries: Bulbasaur -> Ivysaur -> Venusaur -> .
+Pokemon:
+- id: 1
+- name: Bulbasaur
+- HP: 45
+- defense: 49
+- primary: Grass
+- secondary: Poison
+- weakness: Fire
+- resistance: Water
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tackle                      40        40       100
+>> vine whip                   45        45       100
+>> growl                       10        10       100
+************************************************************
+Pokemon:
+- id: 2
+- name: Ivysaur
+- HP: 60
+- defense: 63
+- primary: Grass
+- secondary: Poison
+- weakness: Fire
+- resistance: Water
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> leech seed                  45        45        90
+>> razor leaf                  55        55        95
+>> growl                       10        10       100
+************************************************************
+Pokemon:
+- id: 3
+- name: Venusaur
+- HP: 80
+- defense: 83
+- primary: Grass
+- secondary: Poison
+- weakness: Fire
+- resistance: Water
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tackle                      40        40       100
+>> leech seed                  45        45        90
+>> razor leaf                  55        55        95
+>> growl                       10        10       100
+************************************************************
+
+(*) Entries: Charmander -> Charmeleon -> Charizard -> .
+Pokemon:
+- id: 4
+- name: Charmander
+- HP: 39
+- defense: 43
+- primary: Fire
+- secondary: None
+- weakness: Water
+- resistance: Fire
+- Moves (2):
+>> name                       cost    damage      acc
+>> ====================================================
+>> growl                       10        10       100
+>> fire fang                   65        65        95
+************************************************************
+Pokemon:
+- id: 5
+- name: Charmeleon
+- HP: 58
+- defense: 58
+- primary: Fire
+- secondary: None
+- weakness: Water
+- resistance: Fire
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> growl                       10        10       100
+>> fire fang                   65        65        95
+>> slash                       70        70       100
+************************************************************
+Pokemon:
+- id: 6
+- name: Charizard
+- HP: 78
+- defense: 78
+- primary: Fire
+- secondary: Flying
+- weakness: Water
+- resistance: Fire
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> growl                       10        10       100
+>> fire fang                   65        65        95
+>> slash                       70        70       100
+>> dragon breath               60        60       100
+************************************************************
+
+(*) Entries: Squirtle -> Wartortle -> Blastoise -> .
+Pokemon:
+- id: 7
+- name: Squirtle
+- HP: 44
+- defense: 65
+- primary: Water
+- secondary: None
+- weakness: Fire
+- resistance: Water
+- Moves (2):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tackle                      40        40       100
+>> water gun                   40        40       100
+************************************************************
+Pokemon:
+- id: 8
+- name: Wartortle
+- HP: 59
+- defense: 80
+- primary: Water
+- secondary: None
+- weakness: Fire
+- resistance: Water
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tackle                      40        40       100
+>> water gun                   40        40       100
+>> bite                        60        60       100
+************************************************************
+Pokemon:
+- id: 9
+- name: Blastoise
+- HP: 79
+- defense: 100
+- primary: Water
+- secondary: None
+- weakness: Fire
+- resistance: Water
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tackle                      40        40       100
+>> water gun                   40        40       100
+>> bite                        60        60       100
+>> hydro pump                 110       110        80
+************************************************************
+
+(*) Entries: Caterpie -> Metapod -> Butterfree -> .
+Pokemon:
+- id: 10
+- name: Caterpie
+- HP: 45
+- defense: 35
+- primary: Bug
+- secondary: None
+- weakness: Rock
+- resistance: Bug
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> string shot                 10        10        95
+>> tackle                      40        40       100
+>> bug bite                    60        60       100
+************************************************************
+Pokemon:
+- id: 11
+- name: Metapod
+- HP: 50
+- defense: 55
+- primary: Bug
+- secondary: None
+- weakness: Rock
+- resistance: Bug
+- Moves (1):
+>> name                       cost    damage      acc
+>> ====================================================
+>> harden                      10        10        10
+************************************************************
+Pokemon:
+- id: 12
+- name: Butterfree
+- HP: 60
+- defense: 50
+- primary: Bug
+- secondary: Flying
+- weakness: Rock
+- resistance: Bug
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> string shot                 10        10        95
+>> tackle                      40        40       100
+>> bug bite                    60        60       100
+************************************************************
+
+(*) Entries: Weedle -> Kakuna -> Beedrill -> .
+Pokemon:
+- id: 13
+- name: Weedle
+- HP: 40
+- defense: 30
+- primary: Bug
+- secondary: Poison
+- weakness: Psychic
+- resistance: Bug
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> poison sting                15        15       100
+>> string shot                 10        10        95
+>> bug bite                    60        60       100
+************************************************************
+Pokemon:
+- id: 14
+- name: Kakuna
+- HP: 45
+- defense: 25
+- primary: Bug
+- secondary: Poison
+- weakness: Psychic
+- resistance: Bug
+- Moves (1):
+>> name                       cost    damage      acc
+>> ====================================================
+>> harden                      10        10        10
+************************************************************
+Pokemon:
+- id: 15
+- name: Beedrill
+- HP: 65
+- defense: 40
+- primary: Bug
+- secondary: Poison
+- weakness: Psychic
+- resistance: Bug
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> poison sting                15        15       100
+>> string shot                 10        10        95
+>> bug bite                    60        60       100
+************************************************************
+
+(*) Entries: Pidgey -> Pidgeotto -> Pidgeot -> .
+Pokemon:
+- id: 16
+- name: Pidgey
+- HP: 40
+- defense: 40
+- primary: Normal
+- secondary: Flying
+- weakness: Rock
+- resistance: Flying
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tackle                      40        40       100
+>> hurricane                  110       110        70
+>> quick attack                40        40       100
+************************************************************
+Pokemon:
+- id: 17
+- name: Pidgeotto
+- HP: 63
+- defense: 55
+- primary: Normal
+- secondary: Flying
+- weakness: Rock
+- resistance: Flying
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tackle                      40        40       100
+>> hurricane                  110       110        70
+>> quick attack                40        40       100
+>> gust                        40        40       100
+************************************************************
+Pokemon:
+- id: 18
+- name: Pidgeot
+- HP: 83
+- defense: 75
+- primary: Normal
+- secondary: Flying
+- weakness: Rock
+- resistance: Flying
+- Moves (5):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tackle                      40        40       100
+>> hurricane                  110       110        70
+>> quick attack                40        40       100
+>> gust                        40        40       100
+>> air slash                   75        75        95
+************************************************************
+
+(*) Entries: Rattata -> Raticate -> .
+Pokemon:
+- id: 19
+- name: Rattata
+- HP: 30
+- defense: 35
+- primary: Normal
+- secondary: None
+- weakness: Fighting
+- resistance: Normal
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tackle                      40        40       100
+>> tail whip                   10        10       100
+>> bite                        60        60       100
+************************************************************
+Pokemon:
+- id: 20
+- name: Raticate
+- HP: 55
+- defense: 60
+- primary: Normal
+- secondary: None
+- weakness: Fighting
+- resistance: Normal
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tackle                      40        40       100
+>> tail whip                   10        10       100
+>> bite                        60        60       100
+>> sucker punch                70        70       100
+************************************************************
+
+(*) Entries: Spearow -> Fearow -> .
+Pokemon:
+- id: 21
+- name: Spearow
+- HP: 40
+- defense: 30
+- primary: Normal
+- secondary: Flying
+- weakness: Electric
+- resistance: Fighting
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> growl                       10        10       100
+>> fury attack                 15        15        85
+>> wing attack                 60        60       100
+************************************************************
+Pokemon:
+- id: 22
+- name: Fearow
+- HP: 65
+- defense: 65
+- primary: Normal
+- secondary: Flying
+- weakness: Electric
+- resistance: Fighting
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> growl                       10        10       100
+>> fury attack                 15        15        85
+>> wing attack                 60        60       100
+>> drill peck                  80        80       100
+************************************************************
+
+(*) Entries: Ekans -> Arbok -> .
+Pokemon:
+- id: 23
+- name: Ekans
+- HP: 35
+- defense: 60
+- primary: Poison
+- secondary: None
+- weakness: Psychic
+- resistance: Poison
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> wrap                        15        15        90
+>> poison sting                15        15       100
+>> acid                        40        40       100
+************************************************************
+Pokemon:
+- id: 24
+- name: Arbok
+- HP: 60
+- defense: 69
+- primary: Poison
+- secondary: None
+- weakness: Psychic
+- resistance: Poison
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> wrap                        15        15        90
+>> poison sting                15        15       100
+>> acid                        40        40       100
+>> sludge bomb                 90        90       100
+************************************************************
+
+(*) Entries: Pikachu -> Raichu -> .
+Pokemon:
+- id: 25
+- name: Pikachu
+- HP: 35
+- defense: 40
+- primary: Electric
+- secondary: None
+- weakness: Ground
+- resistance: Electric
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tail whip                   10        10        75
+>> thunder shock               40        40       100
+>> iron tail                  100       100        75
+************************************************************
+Pokemon:
+- id: 26
+- name: Raichu
+- HP: 60
+- defense: 55
+- primary: Electric
+- secondary: None
+- weakness: Ground
+- resistance: Electric
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tail whip                   10        10        75
+>> thunder shock               40        40       100
+>> iron tail                  100       100        75
+>> thunderbolt                 90        90       100
+************************************************************
+
+(*) Entries: Sandshrew -> Sandslash -> .
+Pokemon:
+- id: 27
+- name: Sandshrew
+- HP: 50
+- defense: 85
+- primary: Ground
+- secondary: None
+- weakness: Grass
+- resistance: Ground
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> scratch                     15        15       100
+>> rollout                     30        30        90
+>> earthquake                 100       100       100
+************************************************************
+Pokemon:
+- id: 28
+- name: Sandslash
+- HP: 75
+- defense: 110
+- primary: Ground
+- secondary: None
+- weakness: Grass
+- resistance: Ground
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> scratch                     15        15       100
+>> rollout                     30        30        90
+>> earthquake                 100       100       100
+>> fury cutter                 40        40        95
+************************************************************
+
+(*) Entries: NidoranF -> Nidorina -> Nidoqueen -> .
+Pokemon:
+- id: 29
+- name: NidoranF
+- HP: 55
+- defense: 52
+- primary: Poison
+- secondary: None
+- weakness: Psychic
+- resistance: Poison
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tail whip                   10        10       100
+>> bite                        60        60       100
+>> crunch                      80        80       100
+************************************************************
+Pokemon:
+- id: 30
+- name: Nidorina
+- HP: 70
+- defense: 67
+- primary: Poison
+- secondary: None
+- weakness: Psychic
+- resistance: Poison
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tail whip                   10        10       100
+>> bite                        60        60       100
+>> crunch                      80        80       100
+>> poison sting                15        15       100
+************************************************************
+Pokemon:
+- id: 31
+- name: Nidoqueen
+- HP: 90
+- defense: 87
+- primary: Poison
+- secondary: None
+- weakness: Psychic
+- resistance: Poison
+- Moves (5):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tail whip                   10        10       100
+>> bite                        60        60       100
+>> crunch                      80        80       100
+>> poison sting                15        15       100
+>> double kick                 30        30       100
+************************************************************
+
+(*) Entries: NidoranM -> Nidorino -> Nidoking -> .
+Pokemon:
+- id: 32
+- name: NidoranM
+- HP: 46
+- defense: 40
+- primary: Poison
+- secondary: None
+- weakness: Psychic
+- resistance: Poison
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tail whip                   10        10       100
+>> bite                        60        60       100
+>> crunch                      80        80       100
+************************************************************
+Pokemon:
+- id: 33
+- name: Nidorino
+- HP: 61
+- defense: 57
+- primary: Poison
+- secondary: None
+- weakness: Psychic
+- resistance: Poison
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tail whip                   10        10       100
+>> bite                        60        60       100
+>> crunch                      80        80       100
+>> poison sting                15        15       100
+************************************************************
+Pokemon:
+- id: 34
+- name: Nidoking
+- HP: 81
+- defense: 77
+- primary: Poison
+- secondary: Ground
+- weakness: Psychic
+- resistance: Poison
+- Moves (5):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tail whip                   10        10       100
+>> bite                        60        60       100
+>> crunch                      80        80       100
+>> poison sting                15        15       100
+>> double kick                 30        30       100
+************************************************************
+
+(*) Entries: Clefairy -> Clefable -> .
+Pokemon:
+- id: 35
+- name: Clefairy
+- HP: 70
+- defense: 48
+- primary: None
+- secondary: None
+- weakness: Poison
+- resistance: Fairy
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> sing                        10        10        55
+>> sweet kiss                  10        10        75
+>> pound                       40        40       100
+************************************************************
+Pokemon:
+- id: 36
+- name: Clefable
+- HP: 95
+- defense: 73
+- primary: None
+- secondary: None
+- weakness: Poison
+- resistance: Fairy
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> sing                        10        10        55
+>> sweet kiss                  10        10        75
+>> pound                       40        40       100
+>> disarming voice             40        40       100
+************************************************************
+
+(*) Entries: Vulpix -> Ninetales -> .
+Pokemon:
+- id: 37
+- name: Vulpix
+- HP: 38
+- defense: 40
+- primary: Fire
+- secondary: None
+- weakness: Water
+- resistance: Fire
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tail whip                   10        10       100
+>> quick attack                10        10       100
+>> flamethrower                90        90       100
+************************************************************
+Pokemon:
+- id: 38
+- name: Ninetales
+- HP: 73
+- defense: 75
+- primary: Fire
+- secondary: None
+- weakness: Water
+- resistance: Fire
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tail whip                   10        10       100
+>> quick attack                10        10       100
+>> flamethrower                90        90       100
+************************************************************
+
+(*) Entries: Jigglypuff -> Wigglytuff -> .
+Pokemon:
+- id: 39
+- name: Jigglypuff
+- HP: 115
+- defense: 20
+- primary: Normal
+- secondary: Fire
+- weakness: Poison
+- resistance: Fire
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> disarming voice             40        40       100
+>> sweet kiss                  10        10        75
+>> covet                       60        60       100
+************************************************************
+Pokemon:
+- id: 40
+- name: Wigglytuff
+- HP: 140
+- defense: 45
+- primary: Normal
+- secondary: Fire
+- weakness: Poison
+- resistance: Fire
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> disarming voice             40        40       100
+>> sweet kiss                  10        10        75
+>> covet                       60        60       100
+>> echoed voice                40        40       100
+************************************************************
+
+(*) Entries: Zubat -> Golbat -> .
+Pokemon:
+- id: 41
+- name: Zubat
+- HP: 40
+- defense: 35
+- primary: Poison
+- secondary: Flying
+- weakness: Electric
+- resistance: Flying
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> absorb                      20        20       100
+>> air cutter                  60        60        95
+>> bite                        60        60       100
+************************************************************
+Pokemon:
+- id: 42
+- name: Golbat
+- HP: 75
+- defense: 70
+- primary: Poison
+- secondary: Flying
+- weakness: Electric
+- resistance: Flying
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> absorb                      20        20       100
+>> air cutter                  60        60        95
+>> bite                        60        60       100
+>> venonshock                  65        65       100
+************************************************************
+
+(*) Entries: Oddish -> Gloom -> Vileplume -> .
+Pokemon:
+- id: 43
+- name: Oddish
+- HP: 45
+- defense: 55
+- primary: Grass
+- secondary: Poison
+- weakness: Fire
+- resistance: Poison
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> absorb                      20        20       100
+>> acid                        40        40       100
+>> mega drain                  40        40       100
+************************************************************
+Pokemon:
+- id: 44
+- name: Gloom
+- HP: 60
+- defense: 70
+- primary: Grass
+- secondary: Poison
+- weakness: Fire
+- resistance: Poison
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> absorb                      20        20       100
+>> acid                        40        40       100
+>> mega drain                  40        40       100
+>> sleep powder                10        10        75
+************************************************************
+Pokemon:
+- id: 45
+- name: Vileplume
+- HP: 75
+- defense: 85
+- primary: Grass
+- secondary: Poison
+- weakness: Fire
+- resistance: Poison
+- Moves (5):
+>> name                       cost    damage      acc
+>> ====================================================
+>> absorb                      20        20       100
+>> acid                        40        40       100
+>> mega drain                  40        40       100
+>> sleep powder                10        10        75
+>> petal dance                120       120       100
+************************************************************
+
+(*) Entries: Paras -> Parasect -> .
+Pokemon:
+- id: 46
+- name: Paras
+- HP: 35
+- defense: 55
+- primary: Bug
+- secondary: Grass
+- weakness: Rock
+- resistance: Grass
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> scratch                     40        40       100
+>> slash                       70        70       100
+>> giga drain                  75        75       100
+************************************************************
+Pokemon:
+- id: 47
+- name: Parasect
+- HP: 60
+- defense: 80
+- primary: Bug
+- secondary: Grass
+- weakness: Rock
+- resistance: Grass
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> scratch                     40        40       100
+>> slash                       70        70       100
+>> giga drain                  75        75       100
+>> fury cutter                 40        40        95
+************************************************************
+
+(*) Entries: Venonat -> Venomoth -> .
+Pokemon:
+- id: 48
+- name: Venonat
+- HP: 60
+- defense: 50
+- primary: Bug
+- secondary: Grass
+- weakness: Flying
+- resistance: Grass
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> supersonic                  10        10        55
+>> poison powder               10        10        75
+>> bug buzz                    90        90       100
+************************************************************
+Pokemon:
+- id: 49
+- name: Venomoth
+- HP: 70
+- defense: 60
+- primary: Bug
+- secondary: Grass
+- weakness: Flying
+- resistance: Grass
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> supersonic                  10        10        55
+>> poison powder               10        10        75
+>> bug buzz                    90        90       100
+>> psychic                     90        90       100
+************************************************************
+
+(*) Entries: Diglett -> Dugtrio -> .
+Pokemon:
+- id: 50
+- name: Diglett
+- HP: 10
+- defense: 25
+- primary: Ground
+- secondary: None
+- weakness: Ice
+- resistance: Ground
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> astonish                    30        30       100
+>> bulldoze                    60        60       100
+>> sucker punch                70        70       100
+************************************************************
+Pokemon:
+- id: 51
+- name: Dugtrio
+- HP: 35
+- defense: 50
+- primary: Ground
+- secondary: None
+- weakness: Ice
+- resistance: Ground
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> astonish                    30        30       100
+>> bulldoze                    60        60       100
+>> sucker punch                70        70       100
+>> tri attack                  80        80       100
+************************************************************
+
+(*) Entries: Meowth -> Persian -> .
+Pokemon:
+- id: 52
+- name: Meowth
+- HP: 40
+- defense: 35
+- primary: Normal
+- secondary: None
+- weakness: Fighting
+- resistance: Normal
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> bite                        60        60       100
+>> fury swipes                 18        18        80
+>> slash                       70        70       100
+************************************************************
+Pokemon:
+- id: 53
+- name: Persian
+- HP: 65
+- defense: 60
+- primary: Normal
+- secondary: None
+- weakness: Fighting
+- resistance: Normal
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> bite                        60        60       100
+>> fury swipes                 18        18        80
+>> slash                       70        70       100
+>> play rough                  90        90        90
+************************************************************
+
+(*) Entries: Psyduck -> Golduck -> .
+Pokemon:
+- id: 54
+- name: Psyduck
+- HP: 50
+- defense: 48
+- primary: Water
+- secondary: None
+- weakness: Electric
+- resistance: Water
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> water gun                   40        40       100
+>> confusion                   50        50       100
+>> zen headbutt                80        80        90
+************************************************************
+Pokemon:
+- id: 55
+- name: Golduck
+- HP: 80
+- defense: 78
+- primary: Water
+- secondary: None
+- weakness: Electric
+- resistance: Water
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> water gun                   40        40       100
+>> confusion                   50        50       100
+>> zen headbutt                80        80        90
+>> hydro pump                 110       110        80
+************************************************************
+
+(*) Entries: Mankey -> Primeape -> .
+Pokemon:
+- id: 56
+- name: Mankey
+- HP: 40
+- defense: 35
+- primary: Fighting
+- secondary: None
+- weakness: Psychic
+- resistance: Fighting
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> covet                       60        60       100
+>> cross chop                 100       100        80
+>> close combat               120       120       100
+************************************************************
+Pokemon:
+- id: 57
+- name: Primeape
+- HP: 65
+- defense: 60
+- primary: Fighting
+- secondary: None
+- weakness: Psychic
+- resistance: Fighting
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> covet                       60        60       100
+>> cross chop                 100       100        80
+>> close combat               120       120       100
+>> outrage                    120       120       100
+************************************************************
+
+(*) Entries: Growlithe -> Arcanine -> .
+Pokemon:
+- id: 58
+- name: Growlithe
+- HP: 55
+- defense: 45
+- primary: Fire
+- secondary: None
+- weakness: Ground
+- resistance: Fire
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> bite                        60        60       100
+>> flame wheel                 60        60       100
+>> fire fang                   65        65        95
+************************************************************
+Pokemon:
+- id: 59
+- name: Arcanine
+- HP: 90
+- defense: 80
+- primary: Fire
+- secondary: None
+- weakness: Ground
+- resistance: Fire
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> bite                        60        60       100
+>> flame wheel                 60        60       100
+>> fire fang                   65        65        95
+>> flamethrower                90        90       100
+************************************************************
+
+(*) Entries: Poliwag -> Poliwhirl -> Poliwrath -> .
+Pokemon:
+- id: 60
+- name: Poliwag
+- HP: 40
+- defense: 40
+- primary: Water
+- secondary: None
+- weakness: Electric
+- resistance: Water
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> mist                        10        10        10
+>> muddy water                 90        90        85
+>> water pulse                 60        60       100
+************************************************************
+Pokemon:
+- id: 61
+- name: Poliwhirl
+- HP: 65
+- defense: 65
+- primary: Water
+- secondary: None
+- weakness: Electric
+- resistance: Water
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> mist                        10        10        10
+>> muddy water                 90        90        85
+>> water pulse                 60        60       100
+>> bubble beam                 65        65       100
+************************************************************
+Pokemon:
+- id: 62
+- name: Poliwrath
+- HP: 90
+- defense: 90
+- primary: Water
+- secondary: Fighting
+- weakness: Electric
+- resistance: Water
+- Moves (5):
+>> name                       cost    damage      acc
+>> ====================================================
+>> mist                        10        10        10
+>> muddy water                 90        90        85
+>> water pulse                 60        60       100
+>> bubble beam                 65        65       100
+>> hypnosis                    10        10        60
+************************************************************
+
+(*) Entries: Abra -> Kadabra -> Alakazam -> .
+Pokemon:
+- id: 63
+- name: Abra
+- HP: 25
+- defense: 15
+- primary: Psychic
+- secondary: None
+- weakness: Ghost
+- resistance: Psychic
+- Moves (1):
+>> name                       cost    damage      acc
+>> ====================================================
+>> teleport                    10        10        10
+************************************************************
+Pokemon:
+- id: 64
+- name: Kadabra
+- HP: 40
+- defense: 30
+- primary: Psychic
+- secondary: None
+- weakness: Ghost
+- resistance: Psychic
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> teleport                    10        10        10
+>> psybeam                     65        65       100
+>> psychic                     90        90       100
+************************************************************
+Pokemon:
+- id: 65
+- name: Alakazam
+- HP: 55
+- defense: 45
+- primary: Psychic
+- secondary: None
+- weakness: Ghost
+- resistance: Psychic
+- Moves (4):
+>> name                       cost    damage      acc
+>> ====================================================
+>> teleport                    10        10        10
+>> psybeam                     65        65       100
+>> psychic                     90        90       100
+>> confusion                   50        50       100
+************************************************************
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[ITEM #2]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+************************************************************
+(=0=) Medicine: QTY (100) / Patient
+=======================================================
+Pokemon:
+- id: 25
+- name: Pikachu
+- HP: 35
+- defense: 40
+- primary: Electric
+- secondary: None
+- weakness: Ground
+- resistance: Electric
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tail whip                   10        10        75
+>> thunder shock               40        40       100
+>> iron tail                  100       100        75
+************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[ITEM #3]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+************************************************************
+(=0=) Medicine: QTY (100) / Patient
+=======================================================
+Pokemon:
+- id: 52
+- name: Meowth
+- HP: 40
+- defense: 35
+- primary: Normal
+- secondary: None
+- weakness: Fighting
+- resistance: Normal
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> bite                        60        60       100
+>> fury swipes                 18        18        80
+>> slash                       70        70       100
+************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[ITEM #4]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+************************************************************
+(=0=) Medicine: QTY (100) / Patient
+=======================================================
+Pokemon:
+- id: 23
+- name: Ekans
+- HP: 35
+- defense: 60
+- primary: Poison
+- secondary: None
+- weakness: Psychic
+- resistance: Poison
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> wrap                        15        15        90
+>> poison sting                15        15       100
+>> acid                        40        40       100
+************************************************************
+
+>> comparing Pokedex ? 0
+
+>> equals Pokedex ? 1
+
+>> transforming Pokedex into Medicine...
+ERROR: cannot call 'asMedicine()' using this type.
+
+>> transforming Pokedex into Pokeball...
+ERROR: cannot call 'asPokeball()' using this type.
+
+>> transforming Pokedex into Pokedex...
+   should not throw an exception!
+
+** DONE TESTING Pokebag **
+============================================================

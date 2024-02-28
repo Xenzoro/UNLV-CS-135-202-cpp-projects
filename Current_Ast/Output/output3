@@ -1,0 +1,194 @@
+Waking up Professor Jimi with file 'dataset'
+Professor Jimi's response: Whyyyyyyyy?
+
+................................................................................
+>> creating 6 Pokemons
+** creating an instance of Pikachu
+Pokemon:
+- id: 25
+- name: Pikachu
+- HP: 35
+- defense: 40
+- primary: Electric
+- secondary: None
+- weakness: Ground
+- resistance: Electric
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tail whip                   10        10        75
+>> thunder shock               40        40       100
+>> iron tail                  100       100        75
+************************************************************
+** creating an instance of Bulbasaur
+Pokemon:
+- id: 1
+- name: Bulbasaur
+- HP: 45
+- defense: 49
+- primary: Grass
+- secondary: Poison
+- weakness: Fire
+- resistance: Water
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tackle                      40        40       100
+>> vine whip                   45        45       100
+>> growl                       10        10       100
+************************************************************
+** creating an instance of Charmander
+Pokemon:
+- id: 4
+- name: Charmander
+- HP: 39
+- defense: 43
+- primary: Fire
+- secondary: None
+- weakness: Water
+- resistance: Fire
+- Moves (2):
+>> name                       cost    damage      acc
+>> ====================================================
+>> growl                       10        10       100
+>> fire fang                   65        65        95
+************************************************************
+** creating an instance of Squirtle
+Pokemon:
+- id: 7
+- name: Squirtle
+- HP: 44
+- defense: 65
+- primary: Water
+- secondary: None
+- weakness: Fire
+- resistance: Water
+- Moves (2):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tackle                      40        40       100
+>> water gun                   40        40       100
+************************************************************
+** creating an instance of Pidgey
+Pokemon:
+- id: 16
+- name: Pidgey
+- HP: 40
+- defense: 40
+- primary: Normal
+- secondary: Flying
+- weakness: Rock
+- resistance: Flying
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> tackle                      40        40       100
+>> hurricane                  110       110        70
+>> quick attack                40        40       100
+************************************************************
+** creating an instance of Psyduck
+Pokemon:
+- id: 54
+- name: Psyduck
+- HP: 50
+- defense: 48
+- primary: Water
+- secondary: None
+- weakness: Electric
+- resistance: Water
+- Moves (3):
+>> name                       cost    damage      acc
+>> ====================================================
+>> water gun                   40        40       100
+>> confusion                   50        50       100
+>> zen headbutt                80        80        90
+************************************************************
+................................................................................
+>> creating 9 Pokeballs
+** creating 3 Greatballs
+** creating 3 Ultraballs
+** creating 3 Masterballs
+
+................................................................................
+>> catching Pikachu with Greatball
+ * Pikachu's HP: 35
+ * Greatball's energy: 25
+ * Greatball on action...
+ * Could not capture Pikachu b/c
+    - Pikachu's HP: 10
+    - Greatball's energy: 0
+
+................................................................................
+>> catching Bulbasaur with Greatball
+ * Bulbasaur's HP: 45
+ * Greatball's energy: 25
+ * Greatball on action...
+ * Could not capture Bulbasaur b/c
+    - Bulbasaur's HP: 20
+    - Greatball's energy: 0
+
+................................................................................
+>> catching Charmander with Greatball
+ * Charmander's HP: 39
+ * Greatball's energy: 25
+ * Greatball on action...
+ * Could not capture Charmander b/c
+    - Charmander's HP: 14
+    - Greatball's energy: 0
+
+................................................................................
+>> catching Pikachu with Ultraball
+ * Pikachu's HP: 35
+ * Ultraball's energy: 55
+ * Ultraball on action...
+ * Pikachu was captured successfully
+    - Pikachu's HP: 0
+    - Ultraball's energy: 20
+
+................................................................................
+>> catching Bulbasaur with Ultraball
+ * Bulbasaur's HP: 45
+ * Ultraball's energy: 55
+ * Ultraball on action...
+ * Bulbasaur was captured successfully
+    - Bulbasaur's HP: 0
+    - Ultraball's energy: 10
+
+................................................................................
+>> catching Squirtle with Ultraball
+ * Squirtle's HP: 39
+ * Ultraball's energy: 55
+ * Ultraball on action...
+ * Charmander was captured successfully
+    - Charmander's HP: 0
+    - Ultraball's energy: 16
+
+................................................................................
+>> catching Squirtle with Masterball
+ * Squirtle's HP: 0
+ * Masterball's energy: 20
+ * Masterball on action...
+ * Squirtle was captured successfully
+    - Squirtle's HP: 0
+    - Greatball's energy: 106
+
+................................................................................
+>> catching Pidgey with Masterball
+ * Pidgey's HP: 0
+ * Masterball's energy: 20
+ * Masterball on action...
+ * Pidgey was captured successfully
+    - Pidgey's HP: 0
+    - Greatball's energy: 110
+
+................................................................................
+>> catching Psyduck with Masterball
+ * Psyduck's HP: 0
+ * Masterball's energy: 20
+ * Masterball on action...
+ * Psyduck was captured successfully
+    - Psyduck's HP: 0
+    - Greatball's energy: 100
+
+** DONE TESTING Pokeballs **
+============================================================

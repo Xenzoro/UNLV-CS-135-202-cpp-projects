@@ -1,23 +1,29 @@
 /*
     * Name: Jacob Martinez, NSHE_ID_500755340, 1003 ASSIGNMENT_4
-    * Description: Pok ́emon Yellow Version: Special Pikachu Edition is
-    * a role-playing video game developed by Game Freak and published
-    * by Nintendo for the Game Boy. In any Pok ́emon game, there are
-    * situations where you need to battle other trainers
-    * (where you battle their Pok ́emon) or random wild Pok ́emon.
-    * They consist of turn based battles where you and your opponent
-    * take turns, each pok ́emon have up to 4 moves and each move
-    * can be used a finite amount of times. In all of the Pok ́emon
-    * games, the matches are strategic and you try to play against
-    * your opponent’s weaknesses, but we will have a simple battle
-    * between two Pikachu characters. You will implement a 2 player
-    * turn based battle game between two Pikachus with slightly
-    * different move sets and different defense values. The next few
-    * sections describes the classes you will use and in some cases,
-    * you will need to implement
-    * test2
-    * Input: numbers from input txt files
-    * Output: a hud of the players hit
+    * Description: This assignment is a home builder
+    * using either user input or a file, we will be able to build a home using
+    * pointers. With pointers, we will allocate memory and deallocate memory
+    * pointers allows us to play with the sizes of 2D arrays more.
+    * For example we can have different rooms with different width/ and heights.
+    * We will be using that in this assignment allowing us to make a room
+    * in the method we see fit.
+    * overview from pdf...
+    * The new keyword can be used to dynamically allocate space in C++.
+    * There are two things that can be
+    *  created with new: objects and arrays. To construct a House, we will create several classes and then dynamically
+    *  allocate them to match the specifications of the House. You will be asked to handle the creation
+    *  of space, while the Furniture and specifications will be taken care of by your contractor (the skeleton code).
+    *  Each house will contain a variable number of floors, and each floor will be a rectangle with variable width
+    *  and height. Alongside the house itself, we will keep track of the names of people living within it.
+    *  The floors of the house are 2D grids and will need to be allocated as 2D arrays. The house contains some
+    *  number of floors, and will have an array containing all of the floors. The residents within the home
+    *  is unknown until we are given each of their names. In each of these scenarios that require arrays, the size
+    *  of the array is not known ahead of time and will change between houses. As such, static arrays
+    *  are inappropriate, since the sizes of each array may vary across different runs of the program
+    *  . Dynamic array allocation allows the size of an array to be specified during the run of the program
+    *
+    * Input: numbers from input txt files/ or user input
+    * Output: a visual representation of rooms
 */
 #include "house.h"
 #include "furniture.h"
