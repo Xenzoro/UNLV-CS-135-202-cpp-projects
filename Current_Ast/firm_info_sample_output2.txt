@@ -1,0 +1,11 @@
+User: John_Doe Order details
+   Stock Name: AAPL, Price: 173.72, Stock Quantity: 10, Total Price: 1737.2, User: John_Doe
+   Stock Name: MSFT, Price: 417.32, Stock Quantity: 48, Total Price: 20031.4, User: John_Doe
+   Stock Name: CUDA, Price: 27.54, Stock Quantity: 120, Total Price: 3304.8, User: John_Doe
+Portifolio Value: 25073.4
+
+User: Alice_Smith Order details
+   Stock Name: AMZN, Price: 174.48, Stock Quantity: 18, Total Price: 3140.64, User: Alice_Smith
+   Stock Name: NVIDIA, Price: 884.55, Stock Quantity: 23, Total Price: 20344.6, User: Alice_Smith
+Portifolio Value: 23485.3
+

@@ -303,8 +303,7 @@ int main (int argc, char* argv[]){
                 }
                 return 0;
             }   // i break this string down to find if SEARCH EXISTS
-                searchString =
-                        lastArg.substr(0,lastArg.find("=")+1);
+                searchString = lastArg.substr(0,lastArg.find("=")+1);
                 if (searchString == "-search="){
                     //counter for index
                     int index = 0;

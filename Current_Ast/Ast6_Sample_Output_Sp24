@@ -1,0 +1,213 @@
+
+Sample Output 1:
+
+kishore@kishore-virtual-machine:/Ast6_Sp24_codegrade_Final$ make
+g++ -Wall -Wextra -pedantic -std=c++11 -g -c main.cpp
+g++ -Wall -Wextra -pedantic -std=c++11 -g -o main main.o CUserImp.o  COrderImp.o CFirmImp.o CFileImp.o
+kishore@kishore-virtual-machine: /Ast6_Sp24_codegrade_Final$ valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --show-leak-kinds=all --track-origins=yes --track-fds=yes ./main
+==6224== Memcheck, a memory error detector
+==6224== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6224== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==6224== Command: ./main
+==6224== 
+Enter 3 orders for hardcoded entry
+If the order number is greater than 3,manual entry is needed
+For orders greater than 3, user will manually enteronly the orders that are requested - harcoded 3 entries
+Enter number of orders: 
+3
+John_Doe has more orders than Alice_Smith
+
+Portiofolio Value
+Portfolio Value: 21768.6
+
+User name: John_Doe
+Portfolio Value: 21768.6
+
+Firm after pre-increment: 2 users
+Firm after post-increment: 2 users
+ 
+User: John_Doe Order details
+   Stock Name: AAPL, Price: 173.72, Stock Quantity: 10, Total Price: 1737.2, User: John_Doe
+   Stock Name: MSFT, Price: 417.32, Stock Quantity: 48, Total Price: 20031.4, User: John_Doe
+Portifolio Value: 21768.6
+
+User: Alice_Smith Order details
+   Stock Name: AMZN, Price: 174.48, Stock Quantity: 18, Total Price: 3140.64, User: Alice_Smith
+Portifolio Value: 3140.64
+
+Firm Information:
+John_Doe
+ 
+
+Firm Information:
+Alice_Smith
+ 
+
+Firm Information:
+Alice_Smith
+ 
+
+Firm Information:
+John_Doe
+ 
+
+Original Firm: 2 users
+Copied Firm: 2 users
+
+Original Order: 
+Stock Name: AAPL
+Price: $ 173.72
+Quantity: 10
+Total Price: $1737.2
+
+Updated Order: 
+Stock Name: AAPL
+Price: $ 191.092
+Quantity: 20
+Total Price: $3821.84
+
+Enter tempOrder Details: 
+COrder extraction operator (stockName >> Price >> Quantity >> User)
+INTC 42.71 25 Paul
+
+COrder insertion operator
+User Name: Paul
+Stock Name: INTC
+Price: $ 42.71
+Quantity: 25
+Total Price: $1067.75
+
+==6224== 
+==6224== FILE DESCRIPTORS: 3 open at exit.
+==6224== Open file descriptor 2: /dev/pts/0
+==6224==    <inherited from parent>
+==6224== 
+==6224== Open file descriptor 1: /dev/pts/0
+==6224==    <inherited from parent>
+==6224== 
+==6224== Open file descriptor 0: /dev/pts/0
+==6224==    <inherited from parent>
+==6224== 
+==6224== 
+==6224== HEAP SUMMARY:
+==6224==     in use at exit: 0 bytes in 0 blocks
+==6224==   total heap usage: 44 allocs, 44 frees, 95,359 bytes allocated
+==6224== 
+==6224== All heap blocks were freed -- no leaks are possible
+==6224== 
+==6224== For lists of detected and suppressed errors, rerun with: -s
+==6224== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+kishore@kishore-virtual-machine:/Ast6_Sp24_codegrade_Final$ 
+
+
+Sample Output 2:
+
+kishore@kishore-virtual-machine:/Ast6_Sp24_codegrade_Final$ valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --show-leak-kinds=all --track-origins=yes --track-fds=yes ./main
+==6273== Memcheck, a memory error detector
+==6273== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6273== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==6273== Command: ./main
+==6273== 
+Enter 3 orders for hardcoded entry
+If the order number is greater than 3,manual entry is needed
+For orders greater than 3, user will manually enteronly the orders that are requested - harcoded 3 entries
+Enter number of orders: 
+5
+Enter stock name for order 4: CUDA
+Enter price for order 4: 27.54
+Enter quantity for order 4: 120
+Enter user for order 4: John_Doe
+Enter stock name for order 5: NVIDIA
+Enter price for order 5: 884.55
+Enter quantity for order 5: 23
+Enter user for order 5: Alice_Smith
+John_Doe has more orders than Alice_Smith
+
+Portiofolio Value
+Portfolio Value: 25073.4
+
+User name: John_Doe
+Portfolio Value: 25073.4
+
+Firm after pre-increment: 2 users
+Firm after post-increment: 2 users
+ 
+User: John_Doe Order details
+   Stock Name: AAPL, Price: 173.72, Stock Quantity: 10, Total Price: 1737.2, User: John_Doe
+   Stock Name: MSFT, Price: 417.32, Stock Quantity: 48, Total Price: 20031.4, User: John_Doe
+   Stock Name: CUDA, Price: 27.54, Stock Quantity: 120, Total Price: 3304.8, User: John_Doe
+Portifolio Value: 25073.4
+
+User: Alice_Smith Order details
+   Stock Name: AMZN, Price: 174.48, Stock Quantity: 18, Total Price: 3140.64, User: Alice_Smith
+   Stock Name: NVIDIA, Price: 884.55, Stock Quantity: 23, Total Price: 20344.6, User: Alice_Smith
+Portifolio Value: 23485.3
+
+Firm Information:
+John_Doe
+ 
+
+Firm Information:
+Alice_Smith
+ 
+
+Firm Information:
+Alice_Smith
+ 
+
+Firm Information:
+John_Doe
+ 
+
+Original Firm: 2 users
+Copied Firm: 2 users
+
+Original Order: 
+Stock Name: AAPL
+Price: $ 173.72
+Quantity: 10
+Total Price: $1737.2
+
+Updated Order: 
+Stock Name: AAPL
+Price: $ 191.092
+Quantity: 20
+Total Price: $3821.84
+
+Enter tempOrder Details: 
+COrder extraction operator (stockName >> Price >> Quantity >> User)
+INTC 42.71 25 Paul
+
+COrder insertion operator
+User Name: Paul
+Stock Name: INTC
+Price: $ 42.71
+Quantity: 25
+Total Price: $1067.75
+
+==6273== 
+==6273== FILE DESCRIPTORS: 3 open at exit.
+==6273== Open file descriptor 2: /dev/pts/0
+==6273==    <inherited from parent>
+==6273== 
+==6273== Open file descriptor 1: /dev/pts/0
+==6273==    <inherited from parent>
+==6273== 
+==6273== Open file descriptor 0: /dev/pts/0
+==6273==    <inherited from parent>
+==6273== 
+==6273== 
+==6273== HEAP SUMMARY:
+==6273==     in use at exit: 0 bytes in 0 blocks
+==6273==   total heap usage: 51 allocs, 51 frees, 96,945 bytes allocated
+==6273== 
+==6273== All heap blocks were freed -- no leaks are possible
+==6273== 
+==6273== For lists of detected and suppressed errors, rerun with: -s
+==6273== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+kishore@kishore-virtual-machine:/Ast6_Sp24_codegrade_Final$ 
+
+
+
+
+

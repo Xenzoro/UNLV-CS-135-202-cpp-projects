@@ -1,5 +1,26 @@
+/*
+    * Name: Jacob Martinez, NSHE_ID_500755340, 1003 ASSIGNMENT_5
+    * Description:The objective of this assignment is to utilize the outlined bullet points
+    * to illustrate a segment of
+      the game development process, specifically focusing on crafting a
+      once-popular game (which may not enjoy the same level of popularity today,
+      reflecting back to the era when Professor Jimi and I were considerably younger) using C++.
+      Through this assignment, you will gain familiarity with the substantial workload typically
+      associated with certain applications, as well as learn to implement a selection of popular
+      design patterns tailored for them. Additionally, there is an opportunity for extra credit
+      by extending certain classes to introduce new Pok´emon characters and arenas. It is important
+      to note that while this portion of the assignment is optional, you may only proceed with
+      it once your program functions correctly. Further details about the second assignment
+      for extra credit can be found on Canvas.
+    * Input: numbers from input txt files/ or user input
+    * Output: a visual representation of rooms
+*/
 #include "pokedex.hpp"
 #include "myException.hpp"
+#include <iostream>
+#include <fstream>
+#include <string>
+#include "pokemon.hpp"
 Pokedex::Pokedex()
 {
         count_ = 0;
@@ -97,6 +118,46 @@ Entries** Pokedex::listByRange(int start, int end) throw(myException)
     }
     return temp;
 }
+
+Pokemon* Pokedex::searchByName(std::string name) {
+    //checks how many pokemon we have and iterates through the list.
+    for (int i = 0; i < count_; i++) {
+        // if the name is found in the list, return the pokemon
+        if (pokedex_[i]->find(name)) {
+            return pokedex_[i]->find(name);
+        }
+    }
+    return nullptr;
+}
+void Pokedex::wakeupProfessorJimi(std::string file)
 {
+    std::ifstream ifile;
+    ifile.open(file);
+
+    if(!ifile.is_open())
+    {
+        throw myException("File not found");
+    }
+    //rest of entireity of the remainting string
+    std::string temp0;
+    //substring of temp0 with a specific length required for storing data
+    std::string temp1;
+    //I think this is what I need
+    Pokemon* pokeTemp;
+
+    while(!ifile.eof())
+    {
+        while(getline(ifile,temp0 )){
+
+         temp1 = temp0.substr(0, temp0.find(','));
+         temp0 = temp0.substr(delete)
+         //temp0 = temp0.substr(temp0.find(',') + 1, temp0.length());
+
+            }
+        }
+
+
+
+
 
 }
