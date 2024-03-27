@@ -9,7 +9,8 @@ kishore@kishore-virtual-machine: /Ast6_Sp24_codegrade_Final$ valgrind --tool=mem
 ==6224== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
 ==6224== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
 ==6224== Command: ./main
-==6224== 
+==6224==
+
 Enter 3 orders for hardcoded entry
 If the order number is greater than 3,manual entry is needed
 For orders greater than 3, user will manually enteronly the orders that are requested - harcoded 3 entries
