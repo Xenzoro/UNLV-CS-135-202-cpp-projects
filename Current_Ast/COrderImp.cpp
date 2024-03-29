@@ -38,9 +38,9 @@ int COrder::getQuantity() const
 void COrder::orderDisplay()
 {
 cout << "Stock Name: " << stockName << endl
-     << "Price: " << Price << endl
+     << "Price: $" << Price << endl
      << "Quantity: " << sQuantity << endl
-     << "Total Price: " << totalPrice << endl;
+     << "Total Price: $" << totalPrice << endl;
 }
 
 COrder COrder::operator+() // unary operator overloading
@@ -49,8 +49,9 @@ COrder COrder::operator+() // unary operator overloading
  int nuevosQuantity = 10 + sQuantity;
  double nuevoTotalPrice = nuevosQuantity * nuevoPrice;
  //ignore incorrect spelling... I cant spell lol
- COrder nueveoOrder(stockName,nuevoTotalPrice,
+ COrder nueveoOrder(stockName,nuevoPrice,
                     nuevosQuantity, User);
+ nueveoOrder.totalPrice = nuevoTotalPrice;
     return nueveoOrder; //returns the new object
 }
 
@@ -67,8 +68,8 @@ ostream& operator<<(ostream& os, COrder& order)
 {
     //use os istead of cout to print the values?
 os << "Stock Name: " << order.stockName << endl
-     << "Price: " << order.Price << endl
+     << "Price: $" << order.Price << endl
      << "Quantity: " << order.sQuantity << endl
-     << "Total Price: " << order.totalPrice << endl;
+     << "Total Price: $" << order.Price * order.sQuantity << endl;
     return os; //return the output stream
 }

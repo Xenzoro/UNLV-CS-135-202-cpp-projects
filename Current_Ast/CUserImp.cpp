@@ -5,6 +5,7 @@
     * Output: EXPECTED_PROGRAM_OUTPUT
 */
 #include "CUser.h"
+#include "COrder.h"
 #include <string>
 using namespace std;
 

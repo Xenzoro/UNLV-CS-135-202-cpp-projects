@@ -26,10 +26,20 @@ CFirm::CFirm()
                             Users[i].Orders[j].getQuantity();
         }
     }
+    cout << "Portfolio Value: " << portfolioValue;
+
+
  }
 
  double CFirm::getPortfolio() const
  {
+     for(int i=0; i < Users.size();++i)
+     {
+
+         cout << endl << "User name: " << Users[i].UserName << endl;
+
+     }
+     cout << "Portfolio Value: ";
      return portfolioValue;
  }
 
@@ -71,12 +81,12 @@ CFirm::CFirm()
 
  bool CFirm::operator>(const CFirm& other) const
  {
-     return portfolioValue > other.portfolioValue;
+     return Users[0].Orders.size() > other.Users[0].Orders.size();
  }
 
  bool CFirm::operator<(const CFirm& other) const
  {
-     return portfolioValue < other.portfolioValue;
+     return Users[0].Orders.size() < other.Users[0].Orders.size();
  }
 
  CFirm& CFirm::operator++() //pre-increment operator
@@ -105,7 +115,7 @@ CFirm::CFirm()
     //overloaded alignment operator that copies the users of another CFIrm object to the current object.
     {
         //deep copy
-        if(this == &other)
+        if(this != &other)
         {
             Users.clear();
             for(int i=0; i < other.Users.size();++i)
@@ -119,7 +129,20 @@ CFirm::CFirm()
  ostream& operator<<(ostream& os, const CFirm& firm)
  //Friend funciton that overloads the << operator to output the firm information icluding the names of it's users
  {
-   for(int i=0; i < firm.Users.size();++i)
+    for(int i=0; i < firm.Users.size();++i)
+    {
+        if(firm.Users[i].UserName.empty()){
+            continue;
+        }
+        os << "Firm Information: " << endl
+           << firm.Users[i].UserName << endl <<endl;
+    }
+
+
+
+
+
+   /*for(int i=0; i < firm.Users.size();++i)
    {
        os << "User: " << firm.Users[i].UserName << "Order details" << endl;
 
@@ -132,7 +155,7 @@ CFirm::CFirm()
               << "Total Price: " << tempOrders[j].totalPrice << endl;
 
        }
-   }
+   }*/
      return os;
  }
 

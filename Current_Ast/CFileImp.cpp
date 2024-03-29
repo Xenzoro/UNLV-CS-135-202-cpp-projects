@@ -14,27 +14,33 @@ using namespace std;
 
 void CFile::WriteToFirmFile(const CFirm& firm, const std::string& fileName)
 {
+    double valPort = 0.0;
     ofstream givenFile(fileName);
-    givenFile.open(fileName);
-
-    for(int i=0; i< firm.Users.size();++i) {
+    if(givenFile.is_open()){
+    for(int i=0; i< firm.Users.size();++i)
+    {
         givenFile << "User: " << firm.Users[i].UserName
-                  << "Order details" << endl;
+                  << " Order details" << endl;
 
         for (int j = 0; j < firm.Users[i].Orders.size(); ++j)
         {
-            givenFile
-                    << "   Stock Name: "
-                    << firm.Users[i].Orders[j].stockName << ", "
-                    << "Price: " << firm.Users[i].Orders[j].Price
-                    << ", "
-                    << "Stock Quantity: "
-                    << firm.Users[i].Orders[j].sQuantity
-                    << ", "
-                    << "Total Price: "
-                    << firm.Users[i].Orders[j].totalPrice
-                    << "Portfolio: " << firm.getPortfolio() << endl;
+            givenFile << "   Stock Name: "
+                      << firm.Users[i].Orders[j].stockName << ", "
+                      << "Price: " << firm.Users[i].Orders[j].Price
+                      << ", "
+                      << "Stock Quantity: "
+                      << firm.Users[i].Orders[j].sQuantity
+                      << ", "
+                      << "Total Price: "
+                      << firm.Users[i].Orders[j].totalPrice << ", "
+                      << "User: "
+                      << firm.Users[i].Orders[j].User << endl;
+                      valPort += firm.Users[i].Orders[j].Price * firm.Users[i].Orders[j].sQuantity;
         }
+
+    givenFile << "Portifolio Value: " << valPort << endl << endl;
+    valPort = 0.0;
+    }
     }
     givenFile.close();
 }
@@ -44,29 +50,13 @@ void CFile::WriteToFirmFile(const CFirm& firm, const std::string& fileName)
     ifstream givenFile;
     givenFile.open(fileName);
 
-    cout << "Firm Information: " << endl;
     while(!givenFile.eof())
     {
        string tempLine;
        //get the line from the file
        getline(givenFile, tempLine);
-       //check if the line is empty or starts with U
-       if(tempLine.size() == 0)
-       {
-           continue;
-       }
-       if(tempLine[0] != 'U')
-       {
-           continue;
-       }
-       string wrd;
-       wrd = tempLine.substr(0,5);
-       if(wrd != "User:")
-       {
-           continue;
-       }
-       wrd = tempLine.substr(6, tempLine.size() - 20);
-       cout << wrd << endl;
+         //print the line
+       cout << tempLine << endl;
     }
 
 }
