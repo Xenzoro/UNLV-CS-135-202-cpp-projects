@@ -39,7 +39,7 @@ void CFile::WriteToFirmFile(const CFirm& firm, const std::string& fileName)
     givenFile.close();
 }
 
-static void ReadAndDisplayFirmFile(const string& fileName)
+ void CFile::ReadAndDisplayFirmFile(const string& fileName)
 {
     ifstream givenFile;
     givenFile.open(fileName);
@@ -48,7 +48,8 @@ static void ReadAndDisplayFirmFile(const string& fileName)
     while(!givenFile.eof())
     {
        string tempLine;
-       givenFile >> tempLine;
+       //get the line from the file
+       getline(givenFile, tempLine);
        //check if the line is empty or starts with U
        if(tempLine.size() == 0)
        {

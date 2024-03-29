@@ -63,7 +63,7 @@ is >> order.stockName >> order.Price >> order.sQuantity >> order.User;
 return is; //return the input stream
 }
 
-ostream& operator<< (ostream& os, const COrder& order)
+ostream& operator<<(ostream& os, COrder& order)
 {
     //use os istead of cout to print the values?
 os << "Stock Name: " << order.stockName << endl
