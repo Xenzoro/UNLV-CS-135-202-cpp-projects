@@ -1,8 +1,13 @@
 /*
     * Name: Jacob Martinez, 5007553403, 1003, ASSIGNMENT_6
-    * Description: DESCRIPTION_OF_PROGRAM
-    * Input: EXPECTED_PROGRAM_INPUT
-    * Output: EXPECTED_PROGRAM_OUTPUT
+    * Description: In this assignment you will learn to use operator
+    * overloading both as member and non-member functions, friend
+    * functions, this pointer, copy constructor. This assignment
+    * demonstrates the usage of several classes such as COrder,
+    * CUser, CFirm, and CFile for managing the orders, users, and
+    * firms in a financial context.
+    * Input: numbers '.' and some financial data
+    * Output: The program will output the portfolio value of the firm
 */
 #include "COrder.h"
 #include <string>
@@ -67,7 +72,10 @@ return is; //return the input stream
 ostream& operator<<(ostream& os, COrder& order)
 {
     //use os istead of cout to print the values?
-os << "Stock Name: " << order.stockName << endl
+os   << "corder extraction operator (stockname >> price >>"
+        " quantity >> user)" << endl
+     << "corder insertion operator user name: paul" << endl
+     << "Stock Name: " << order.stockName << endl
      << "Price: $" << order.Price << endl
      << "Quantity: " << order.sQuantity << endl
      << "Total Price: $" << order.Price * order.sQuantity << endl;

@@ -1,8 +1,13 @@
 /*
     * Name: Jacob Martinez, 5007553403, 1003, ASSIGNMENT_6
-    * Description: DESCRIPTION_OF_PROGRAM
-    * Input: EXPECTED_PROGRAM_INPUT
-    * Output: EXPECTED_PROGRAM_OUTPUT
+    * Description: In this assignment you will learn to use operator
+    * overloading both as member and non-member functions, friend
+    * functions, this pointer, copy constructor. This assignment
+    * demonstrates the usage of several classes such as COrder,
+    * CUser, CFirm, and CFile for managing the orders, users, and
+    * firms in a financial context.
+    * Input: numbers '.' and some financial data
+    * Output: The program will output the portfolio value of the firm
 */
 #include "CFirm.h"
 #include "CUser.h"
@@ -137,11 +142,7 @@ CFirm::CFirm()
         os << "Firm Information: " << endl
            << firm.Users[i].UserName << endl <<endl;
     }
-
-
-
-
-
+    //no need for this i think?
    /*for(int i=0; i < firm.Users.size();++i)
    {
        os << "User: " << firm.Users[i].UserName << "Order details" << endl;
