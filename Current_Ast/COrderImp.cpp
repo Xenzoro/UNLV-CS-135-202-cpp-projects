@@ -48,14 +48,13 @@ COrder COrder::operator+() // unary operator overloading
  double nuevoPrice = 1.10 * Price;
  int nuevosQuantity = 10 + sQuantity;
  double nuevoTotalPrice = nuevosQuantity * nuevoPrice;
-
+ //ignore incorrect spelling... I cant spell lol
  COrder nueveoOrder(stockName,nuevoTotalPrice,
                     nuevosQuantity, User);
     return nueveoOrder; //returns the new object
-} //                |
-  // ask for help? \/
+}
 
-istream& operator>> (istream& is, COrder& order) //dont need to
+istream& operator>> (istream& is, COrder& order) //don't need to
                       // include friend keyword like in the prototype.
 {
     //read the values from the input stream
@@ -63,12 +62,11 @@ is >> order.stockName >> order.Price >> order.sQuantity >> order.User;
 
 return is; //return the input stream
 }
-//ask for help with this function too !
+
 ostream& operator<< (ostream& os, const COrder& order)
 {
     //use os istead of cout to print the values?
-    //dont we already do this in the orderDisplay function?
-os   << "Stock Name: " << order.stockName << endl
+os << "Stock Name: " << order.stockName << endl
      << "Price: " << order.Price << endl
      << "Quantity: " << order.sQuantity << endl
      << "Total Price: " << order.totalPrice << endl;
