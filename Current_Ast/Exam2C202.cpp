@@ -57,6 +57,39 @@ public:
 
 };
 
+class fraction
+{
+    int numerator;
+    int denominator;
+
+    fraction operator* ( const fraction& rhs)
+    {
+        fraction total;
+        total.numerator = this->numerator * rhs.numerator;
+        total.denominator = this->denominator * rhs.denominator;
+        return total;
+    }
+
+    fraction operator/ (const fraction& rhs)
+    {
+        fraction total;
+        total.numerator = this->numerator * rhs.denominator;
+        total.denominator = this->denominator * rhs.numerator;
+        return total;
+    }
+
+    fraction operator! ()
+    {
+        fraction total;
+        total.numerator = this->denominator;
+        total.denominator = this->numerator;
+        return total;
+
+    }
+};
+
+class
+
 int main()
 {
     do{
