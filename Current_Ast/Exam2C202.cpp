@@ -1,5 +1,6 @@
 #include <iostream>
 
+using namespace std;
 class shape
         {
         public:
@@ -7,9 +8,9 @@ class shape
 
             shape(double length, double width, double height) : length(length), width(width), height(height){};
 
-            virtual void area() = 0;
+            ~shape();
 
-            virtual void perimeter() = 0;
+            virtual void volume() = 0;
 
             int getLength() const
             {
@@ -31,27 +32,50 @@ class shape
             double width;
             double height;
         };
-class rectangle : public shape
+
+class cube: public shape
 {
-    public:
-    rectangle() : shape(){};
-    rectangle(double l, double w, double h) : shape(l, w, h){};
+public:
+    cube() : shape(){};
+    cube(double l, double w, double h) : shape(l, w, h){};
+
+    void volume()
+    {
+        cout << "Volume of cube is " << getLength() * getWidth() * getHeight() << endl;
+    }
+
+    void area()
+    {
+        cout << "Area of cube is " << 2 * (getLength() * getWidth() + getWidth() * getHeight() + getLength() * getHeight()) << endl;
+    }
 
     void perimeter()
     {
-        std::cout << "Perimeter of rectangle is " << 2 * (getWidth() + getHeight()) << std::endl;
+        cout << "Perimeter of cube is " << 4 * (getLength() + getWidth() + getHeight()) << endl;
     }
-    void area()
-    {
-       std::cout << "Area of rectangle is " << getLength() * getWidth() << std::endl;
-    }
-    private:
+
 
 };
+
 int main()
 {
-    rectangle r(10, 5,0);
-    r.area();
-    r.perimeter();
+    do{
+    cout << endl <<"Enter a cube: i.e. <l> <w> <h>" << endl;
+    int l1, w1, h1;
+    cin >> l1 >> w1 >> h1;
+    cube c(l1, w1, h1);
+    c.area();
+    c.perimeter();
+    c.volume();
+    cout << "Thank you for using this program" << endl;
+    cout << endl << "Do you want to continue? (y/n)" << endl;
+    char c1;
+    cin >> c1;
+    if(c1 == 'n')
+    {
+        break;
+
+    }
+    }while(true);
     return 0;
 }
