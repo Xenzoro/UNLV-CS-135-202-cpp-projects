@@ -1,0 +1,80 @@
+**************************************
+Student 1:
+Name: Paul
+Age: 25 Midterm 1: 89 Midterm 2: 76
+ Final Exam: 99
+ Total: 264
+ Grade: B
+**************************************Student 2:
+Name: Sam
+Age: 27 Midterm 1: 99 Midterm 2: 87
+ Final Exam: 86
+ Total: 272
+ Grade: A
+**************************************Student 3:
+Name: Alice
+Age: 22 Midterm 1: 78 Midterm 2: 85
+ Final Exam: 92
+ Total: 255
+ Grade: B
+**************************************Student 4:
+Name: Bob
+Age: 23 Midterm 1: 95 Midterm 2: 88
+ Final Exam: 78
+ Total: 261
+ Grade: B
+**************************************Student 5:
+Name: Cathy
+Age: 26 Midterm 1: 85 Midterm 2: 70
+ Final Exam: 78
+ Total: 233
+ Grade: C
+**************************************Student 6:
+Name: David
+Age: 24 Midterm 1: 82 Midterm 2: 94
+ Final Exam: 87
+ Total: 263
+ Grade: B
+**************************************Student 7:
+Name: Emily
+Age: 28 Midterm 1: 76 Midterm 2: 65
+ Final Exam: 60
+ Total: 201
+ Grade: F
+**************************************Student 8:
+Name: Frank
+Age: 29 Midterm 1: 95 Midterm 2: 91
+ Final Exam: 100
+ Total: 286
+ Grade: A
+**************************************Student 9:
+Name: Grace
+Age: 30 Midterm 1: 94 Midterm 2: 78
+ Final Exam: 88
+ Total: 260
+ Grade: B
+**************************************Student 10:
+Name: Hank
+Age: 31 Midterm 1: 75 Midterm 2: 86
+ Final Exam: 90
+ Total: 251
+ Grade: B
+**************************************Student 11:
+Name: Jonathan
+Age: 33 Midterm 1: 98 Midterm 2: 67
+ Final Exam: 100
+ Total: 265
+ Grade: B
+**************************************Student 12:
+Name: Simon
+Age: 35 Midterm 1: 100 Midterm 2: 100
+ Final Exam: 100
+ Total: 300
+ Grade: A
+**************************************Student 13:
+Name: Simon
+Age: 35 Midterm 1: 100 Midterm 2: 100
+ Final Exam: 100
+ Total: 300
+ Grade: A
+**************************************

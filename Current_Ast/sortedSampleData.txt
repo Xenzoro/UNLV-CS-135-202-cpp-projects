@@ -1,0 +1,8 @@
+Student 1 details:
+Name: Andy
+Age: 25
+Midterm1: 92 Midterm2: 88 FinalExam: 95 Total: 275Grade: A
+Student 2 details: Name: Sarah Age: 22 Midterm1: 80 Midterm2: 85 FinalExam: 82 Total: 247 Grade: B
+Student 3 details: Name: Lisa Age: 21 Midterm1: 88 Midterm2: 99 FinalExam: 77 Total: 264 Grade: B
+Student 4 details: Name: Kyle Age: 32 Midterm1: 78 Midterm2: 76 FinalExam: 75 Total: 229 Grade: C
+Student 5 details: Name: Jason Age: 28 Midterm1: 65 Midterm2: 70 FinalExam: 68 Total: 203 Grade: F

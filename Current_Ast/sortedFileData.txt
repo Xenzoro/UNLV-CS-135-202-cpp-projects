@@ -1,0 +1,14 @@
+Student 1 details:
+Name: Jonathan
+Age: 33
+Midterm1: 98 Midterm2: 67 FinalExam: 100 Total: 265Grade: B
+Student 2 details: Name: Hank Age: 31 Midterm1: 75 Midterm2: 86 FinalExam: 90 Total: 251 Grade: B
+Student 3 details: Name: Grace Age: 30 Midterm1: 94 Midterm2: 78 FinalExam: 88 Total: 260 Grade: B
+Student 4 details: Name: Frank Age: 29 Midterm1: 95 Midterm2: 91 FinalExam: 100 Total: 286 Grade: A
+Student 5 details: Name: Emily Age: 28 Midterm1: 76 Midterm2: 65 FinalExam: 60 Total: 201 Grade: F
+Student 6 details: Name: Sam Age: 27 Midterm1: 99 Midterm2: 87 FinalExam: 86 Total: 272 Grade: A
+Student 7 details: Name: Cathy Age: 26 Midterm1: 85 Midterm2: 70 FinalExam: 78 Total: 233 Grade: C
+Student 8 details: Name: Paul Age: 25 Midterm1: 89 Midterm2: 76 FinalExam: 99 Total: 264 Grade: B
+Student 9 details: Name: David Age: 24 Midterm1: 82 Midterm2: 94 FinalExam: 87 Total: 263 Grade: B
+Student 10 details: Name: Bob Age: 23 Midterm1: 95 Midterm2: 88 FinalExam: 78 Total: 261 Grade: B
+Student 11 details: Name: Alice Age: 22 Midterm1: 78 Midterm2: 85 FinalExam: 92 Total: 255 Grade: B

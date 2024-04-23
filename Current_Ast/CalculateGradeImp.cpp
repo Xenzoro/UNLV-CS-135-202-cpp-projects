@@ -1,14 +1,15 @@
 /*
     * Name: Jacob Martinez, 5007553403, 1003, ASSIGNMENT_8
-    * Description: Recursion is a powerful tool for problem solving.
-    * While not always the most efficient, it allows us to reason
-    * through problems that might otherwise be difficult to solve.
-    * This assignment differs slightly from the others
-    * in that it is not a cohesive program so much as a set
-    * of problems. You will be asked to solve several problems
-    * recursively
+    * Description: The main() function serves as the entry point
+    * for the program. The program reads student data from a
+    file named "studentsData.txt" and inserts it into a linked list
+    using the insertStudentFromFile() function
+    of the CalculateGrade class. The program also includes some
+    hard-coded sample student data, which is inserted into the linked
+    list using the insertStudentFromSample() function of the
+    CalculateGrade class.
     * Input: number
-    * Output: the selected function.
+    * Output: le grades ;)
 */
 #include <iostream>
 #include <fstream>
@@ -16,6 +17,14 @@
 
 using namespace std;
 
+CalculateGrade::CalculateGrade()
+{
+    headFromFile = nullptr;
+    tailFromFile = nullptr;
+    headFromSample = nullptr;
+    tailFromSample = nullptr;
+}
+// this function will read the student data from the file
 bool sortByAge(const Student* a, const Student* b)
 {
     if(a->age > b->age)
@@ -24,7 +33,7 @@ bool sortByAge(const Student* a, const Student* b)
     }
         return false;
 }
-
+// this function will read the student data from the file
 bool sortByGrade(const Student* a, const Student* b)
 {
     if(a->grade < b->grade)
@@ -33,18 +42,20 @@ bool sortByGrade(const Student* a, const Student* b)
     }
         return false;
 }
-
+// this function will read the student data from the file
 void CalculateGrade::calculateGrade(Student* student)
 {
-    if(student->grade >= 90)
+    int tScore = (student->midterm1 + student->midterm2 + student->finalExam) / 3;
+
+    if(tScore >= 90)
     {
         student->grade = 'A';
     }
-    else if(student->grade >= 80)
+    else if(tScore >= 80)
     {
         student->grade = 'B';
     }
-    else if(student->grade >= 70)
+    else if(tScore >= 70)
     {
         student->grade = 'C';
     }
@@ -53,7 +64,7 @@ void CalculateGrade::calculateGrade(Student* student)
         student->grade = 'F';
     }
 }
-
+// this function will read the student data from the file
 void CalculateGrade::insertStudent(Student* &head, Student* &tail, Student* newStudent)
 {
     //if the list is vacant or EMPTY
@@ -71,7 +82,7 @@ void CalculateGrade::insertStudent(Student* &head, Student* &tail, Student* newS
     }
     newStudent->next = nullptr;
 }
-
+ // this function will read the student data from the file
 void CalculateGrade::insertStudentFromFile(string name, int age, int midterm1, int midterm2, int finalExam)
 {
     //Creates a new student obj w/ the provided parameters
@@ -96,10 +107,12 @@ void CalculateGrade::insertStudentFromFile(string name, int age, int midterm1, i
 
     //calls the insertStudent function with the headFromSample,
     //tailFromSample, and newStudent as params
-    insertStudent(headFromSample, tailFromSample, newStudent);
+    insertStudent(headFromFile, tailFromFile, newStudent);
 }
 // MAD CONFUSED why write the same function twice?
-// seems redundant...
+// seems redundant... i guess cause
+// one is for the file and the other is for the sample data?
+// this function will read the student data from the file
 void CalculateGrade::insertStudentFromSample(std::string name, int age,int midterm1, int midterm2,int finalExam)
 {
     //Creates a new student obj w/ the provided parameters
@@ -126,7 +139,7 @@ void CalculateGrade::insertStudentFromSample(std::string name, int age,int midte
     //tailFromSample, and newStudent as params
     insertStudent(headFromSample, tailFromSample, newStudent);
 }
-
+// this function will read the student data from the file
 void CalculateGrade::printStudents()
 {
     Student *current = headFromFile;
@@ -134,12 +147,12 @@ void CalculateGrade::printStudents()
 
     //prints the students from the file
     cout << "Students from file:" << endl;
-    current = headFromFile;
+
 
     //while the current student is not nullptr bc. if it was nullptr it would be the end of the list
     while(current != nullptr)
     {
-        cout << "Student " << stuNum << "details" << endl
+        cout << "Student " << stuNum << " details" << endl
              << "Name: " << current->name << endl
              << "Age: " << current->age << endl
              << "Midterm 1: " << current->midterm1 << endl
@@ -159,7 +172,7 @@ void CalculateGrade::printStudents()
     //while the current student is not nullptr bc. if it was nullptr it would be the end of the list
     while(current != nullptr)
     {
-        cout << "Student " << stuNum << "details" << endl
+        cout << "Student " << stuNum << " details" << endl
              << "Name: " << current->name << endl
              << "Age: " << current->age << endl
              << "Midterm 1: " << current->midterm1 << endl
@@ -171,8 +184,8 @@ void CalculateGrade::printStudents()
         stuNum++;
     }
 }
-
-/*void CalculateGrade::sortDataFromFile(std::string sortCriteria)
+// this function will read the student data from the file
+void CalculateGrade::sortDataFromFile(std::string sortCriteria)
 {
     vector<Student*> students;
     Student* current = headFromFile;
@@ -180,63 +193,326 @@ void CalculateGrade::printStudents()
     //this will popluate the vector with the students from the file
     while(current != nullptr)
     {
+        //this adds the value of head into the vector
+        //then it moves to the next student in the LL
+        // and adds that to the vector
         students.push_back(current);
         current = current->next;
     }
 
-    //this will sort the students based on the sortCriteria
-    if(sortCriteria == "age")
+    //sorts based on criteria
+    //these if statements are extremely confusing to me
+    //they do something then get flipped to do something else if
+    //the criteria is not met...
+    for(int i = 0; i < students.size() - 1; i++)
     {
-       for(int i = 0; i < students.size(); i++)
-       {
-           for(int j = 0; j < students.size() - 1; j++)
-           {
-               if(students[j]->age > students[j + 1]->age)
-               {
-                   swap(students[j], students[j + 1]);
-               }
-           }
-       }
+        for(int j = 0; j < students.size() - i - 1; j++)
+        {
+            if(sortCriteria == "age" && students[j]->age < students[j + 1]->age)
+            {
+                swap(students[j], students[j + 1]);
+            }
+            else if(sortCriteria == "grade" && students[j]->grade > students[j + 1]->grade)
+            {
+                swap(students[j], students[j + 1]);
+            }
+            else if(sortCriteria != "age" && sortCriteria != "grade")
+            {
+                if(students[j]->grade < students[j + 1]->grade)
+                {
+                    swap(students[j], students[j + 1]);
+                }
+                else if(students[j]->grade == students[j + 1]->grade)
+                {
+                    if(students[j]->age > students[j + 1]->age)
+                    {
+                        swap(students[j], students[j + 1]);
+                    }
+                    else if(students[j]->age == students[j + 1]->age && students[j]->name > students[j + 1]->name)
+                    {
+                        swap(students[j], students[j + 1]);
+                    }
+                }
+            }
+        }
     }
-    else if(sortCriteria == "grade")
-    {
-        sort(students.begin(), students.end(), sortByGrade);
-    }
-}*/
+    //this will write the sorted data to the file
+    ofstream outFile("sortedFileData.txt");
 
+    int stuNum = 1;
+    //output required by pdf
+    cout << "Student Size: " << students.size() << endl;
+
+    //this will write the sorted data to the file
+    for(int i = 0; i < students.size(); i++)
+    {
+        //had to do it this way because the output was not matching
+        // the pdf
+        if(i == 0)
+        {
+            outFile << "Student " << stuNum << " details:" << endl
+                    << "Name: " << students[i]->name << endl
+                    << "Age: " << students[i]->age << endl
+                    << "Midterm1: " << students[i]->midterm1
+                    << " Midterm2: " << students[i]->midterm2
+                    << " FinalExam: " << students[i]->finalExam
+                    << " Total: " << students[i]->midterm1 +
+                    students[i]->midterm2 + students[i]->finalExam
+                    << "Grade: " << students[i]->grade << endl;
+        }else
+        {
+            outFile << "Student " << stuNum << " details:"
+                    << " Name: " << students[i]->name
+                    << " Age: " << students[i]->age
+                    << " Midterm1: " << students[i]->midterm1
+                    << " Midterm2: " << students[i]->midterm2
+                    << " FinalExam: " << students[i]->finalExam
+                    << " Total: " << students[i]->midterm1 +
+                                     students[i]->midterm2 +
+                                     students[i]->finalExam
+                    << " Grade: " << students[i]->grade << endl;
+        }
+        stuNum++;
+    }
+
+    outFile.close();
+    cout << "Result written to file sortedFileData.txt" << endl;
+}
+//  this function will populate the vector
+//  with the students from the sample data and sort them
+//  based on the criteria
+void CalculateGrade::sortDataFromSample(std::string sortCriteria)
+{
+    vector<Student*> students;
+    Student* current = headFromSample;
+
+    //populate the vector with the students from the sample data
+    while(current != nullptr)
+    {
+        students.push_back(current);
+        current = current->next;
+    }
+    //sorts based on criteria
+    //these if statements are extremely confusing to me
+    ///they do something then get flipped to do something else.
+
+    for(int i = 0; i < students.size() - 1; i++)
+    {
+        for(int j = 0; j < students.size() - i - 1; j++)
+        {
+            if(sortCriteria == "age" && students[j]->age < students[j + 1]->age)
+            {
+                swap(students[j], students[j + 1]);
+            }
+            else if(sortCriteria == "grade" && students[j]->grade > students[j + 1]->grade)
+            {
+                swap(students[j], students[j + 1]);
+            }
+            else if(sortCriteria != "age" && sortCriteria != "grade")
+            {
+                if(students[j]->grade < students[j + 1]->grade)
+                {
+                    swap(students[j], students[j + 1]);
+                }
+                else if(students[j]->grade == students[j + 1]->grade)
+                {
+                    if(students[j]->age > students[j + 1]->age)
+                    {
+                        swap(students[j], students[j + 1]);
+                    }
+                    else if(students[j]->age == students[j + 1]->age && students[j]->name > students[j + 1]->name)
+                    {
+                        swap(students[j], students[j + 1]);
+                    }
+                }
+            }
+        }
+
+    /*for(int i = 0; i < students.size() - 1; i++)
+    {
+        for(int j = 0; j < students.size() - i - 1; j++)
+        {
+            if(sortCriteria == "age")
+            {
+
+                //sorts in ascending order
+                if(!sortByAge(students[j], students[j + 1]))
+                {
+                    swap(students[j], students[j + 1]);
+                }
+            }
+            else if(sortCriteria == "grade")
+            {
+                //sorts in descending order
+                if(!sortByGrade(students[j], students[j + 1]))
+                {
+                    swap(students[j], students[j + 1]);
+                }
+            }
+            else
+            {
+                //sorts in ascending order of grade
+                if(students[j]->name < students[j + 1]->name)
+                {
+                    swap(students[j], students[j + 1]);
+                }
+
+            }
+        }
+
+*/
+    /*for(int i = 0; i < students.size() - 1; i++)
+    {
+        for(int j = 0; j < students.size() - i - 1; j++)
+        {
+            if(sortCriteria == "age")
+            {
+                //sorts in ascending order
+                if(students[j]->age > students[j + 1]->age)
+                {
+                    swap(students[j], students[j + 1]);
+                }
+            }else if(sortCriteria == "grade")
+            {
+                //sorts in descending order
+                if(students[j]->grade < students[j + 1]->grade)
+                {
+                    swap(students[j], students[j + 1]);
+                }
+            }else
+            {
+                if(sortCriteria != "age" || sortCriteria != "grade")
+                {
+                    //sorts in descending order
+                    if(students[j]->grade < students[j + 1]->grade)
+                    {
+                        swap(students[j], students[j + 1]);
+                    }
+                    if(students[j]->age > students[j + 1]->age)
+                    {
+                        //sorts in ascending order
+                        swap(students[j], students[j + 1]);
+                    }
+                    if(students[j]->name > students[j + 1]->name)
+                    {
+                        //sorts in ascending order
+                        swap(students[j], students[j + 1]);
+                    }
+                }
+            }
+*/
+            /*if(sortCriteria == "grade" && students[j]->grade < students[j + 1]->grade)
+            {
+                swap(students[j], students[j + 1]);
+            }
+            else if(sortCriteria == "age" && students[j]->age > students[j + 1]->age)
+            {
+                swap(students[j], students[j + 1]);
+            }
+            else if(sortCriteria != "age" && sortCriteria != "grade")
+            {
+                if(students[j]->grade < students[j + 1]->grade)
+                {
+                    swap(students[j], students[j + 1]);
+                }
+                else if(students[j]->grade == students[j + 1]->grade)
+                {
+                    if(students[j]->age > students[j + 1]->age)
+                    {
+                        swap(students[j], students[j + 1]);
+                    }
+                    else if(students[j]->age == students[j + 1]->age && students[j]->name > students[j + 1]->name)
+                    {
+                        swap(students[j], students[j + 1]);
+                    }
+                }
+            }*/
+        //}
+    }
+    ofstream outFile("sortedSampleData.txt");
+
+    int stuNum = 1;
+
+    cout << "Student Size: " << students.size() << endl;
+
+    //this will write the sorted data to the file
+    for(int i = 0; i < students.size(); i++)
+    {
+        if(i == 0)
+        {
+            outFile << "Student " << stuNum << " details:" << endl
+                    << "Name: " << students[i]->name << endl
+                    << "Age: " << students[i]->age << endl
+                    << "Midterm1: " << students[i]->midterm1
+                    << " Midterm2: " << students[i]->midterm2
+                    << " FinalExam: " << students[i]->finalExam
+                    << " Total: " << students[i]->midterm1 +
+                                     students[i]->midterm2 + students[i]->finalExam
+                    << "Grade: " << students[i]->grade << endl;
+        }else
+        {
+            outFile << "Student " << stuNum << " details:"
+                    << " Name: " << students[i]->name
+                    << " Age: " << students[i]->age
+                    << " Midterm1: " << students[i]->midterm1
+                    << " Midterm2: " << students[i]->midterm2
+                    << " FinalExam: " << students[i]->finalExam
+                    << " Total: " << students[i]->midterm1 +
+                                     students[i]->midterm2 +
+                                     students[i]->finalExam
+                    << " Grade: " << students[i]->grade << endl;
+        }
+        stuNum++;
+    }
+    outFile.close();
+
+    cout << "Students from Sample:" << endl;
+}
+
+// this function will compute and print the grades for all students
 void CalculateGrade::computeAndPrintGrades()
 {
     ofstream outFile("studentsData_OutputFile.txt");
 
     // this iterates through the LL starting from the headFromFile pointer
     Student* current = headFromFile;
+    int stuNum = 1;
 
     while(current != nullptr)
     {
         calculateGrade(current);
-
+    if(stuNum == 1)
+    {
+        outFile << "**************************************" << endl
+                << "Student " << stuNum << ":" << endl;
+    }else
+    {
+       outFile << "Student " << stuNum << ":" << endl;
+    }
     //this will write the student data to the file
     outFile << "Name: " << current->name << endl
-            << "Age: " << current->age << endl
-            << "Midterm 1: " << current->midterm1 << endl
-            << "Midterm 2: " << current->midterm2 << endl
-            << "Final Exam: " << current->finalExam << endl
-            << "Total: " << current->midterm1 + current->midterm2 + current->finalExam << endl
-            << "Grade: " << current->grade << endl << endl;
+            << "Age: " << current->age
+            << " Midterm 1: " << current->midterm1
+            << " Midterm 2: " << current->midterm2 << endl
+            << " Final Exam: " << current->finalExam << endl
+            << " Total: " << current->midterm1 + current->midterm2 + current->finalExam << endl
+            << " Grade: " << current->grade << endl
+            << "**************************************";
 
     //move to the next student
     current = current->next;
+    stuNum++;
     }
     outFile.close();
 }
-
+// this function will update the student data to the file
 void CalculateGrade::updateStudentToFile()
 {
     // prompts the user to enter details
     string name;
     int age, midterm1, midterm2, finalExam;
     cout << "Enter the student's name: ";
-    getline(cin, name);
+    cin >> name;
     cout << "Enter the student's age: ";
     cin >> age;
     cout << "Enter the student's midterm 1 score: ";
@@ -251,14 +527,20 @@ void CalculateGrade::updateStudentToFile()
 
     //open the file in append mode
 
+    //use ios::app given in CS Discord
 
-    //i am stuck here. how can I append data to the end of a txt file that already exists?
+    ofstream outFile("studentsData.txt",ios::app);
 
-    ofstream outFile("studentsData.txt",
+    //write the student data to the file
+    outFile << name << " " << age << " " << midterm1 << " " << midterm2 << " " << finalExam << endl;
 
+    //close the file
+    outFile.close();
 
+    //print message
+    cout << "The student details have been updated in the 'StudentData.txt' file" << endl;
 }
-
+ //destructor to delete the students from the file
 CalculateGrade::~CalculateGrade()
 {
     Student* current = headFromFile;
