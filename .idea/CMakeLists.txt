@@ -9,4 +9,5 @@ add_executable(_idea
         editor.xml
         EDU_CS.iml
         modules.xml
-        vcs.xml)
+        vcs.xml
+        "../Past_Asts/Prev assignments CS202/SPR24_Assignment7/main.cpp")
