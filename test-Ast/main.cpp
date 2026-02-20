@@ -27,10 +27,12 @@ int main()
 
         // this adds up all the values of the array and stores it in sum
         sum += arrayd[i];
-        if (arrayd[i] < min)
+        if (arrayd[i] < min){
             min = arrayd[i];
-        if (arrayd[i] > max)
+        }
+        if (arrayd[i] > max){
             max = arrayd[i];
+        }
         if ((int)arrayd[i]%7 == 0)
         {
             count7++;
