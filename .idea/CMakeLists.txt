@@ -10,4 +10,5 @@ add_executable(_idea
         EDU_CS.iml
         modules.xml
         vcs.xml
-        "../Past_Asts/Prev assignments CS202/SPR24_Assignment7/main.cpp")
+        "../Past_Asts/Prev assignments CS202/SPR24_Assignment7/main.cpp"
+        ../test-Ast/main.cpp)
