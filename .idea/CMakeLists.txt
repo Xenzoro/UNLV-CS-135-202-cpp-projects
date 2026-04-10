@@ -11,4 +11,5 @@ add_executable(_idea
         modules.xml
         vcs.xml
         "../Past_Asts/Prev assignments CS202/SPR24_Assignment7/main.cpp"
-        ../test-Ast/main.cpp)
+        ../test-Ast/main.cpp
+        ../example/main.cpp)
